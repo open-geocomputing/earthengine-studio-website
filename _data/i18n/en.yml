@@ -1,0 +1,107 @@
+nav:
+  home: Earth Engine Studio home
+  open_menu: Open navigation
+  main: Main navigation
+  capabilities: Capabilities
+  workflow: Workflow
+  about: About
+  documentation: Documentation
+  open: Open Studio
+hero:
+  eyebrow: Open geospatial workspace
+  title_one: See the planet.
+  title_two: Shape what’s next.
+  lede: A modern coding environment built on Google Earth Engine—bringing JavaScript and browser-side Python with NumPy, Matplotlib, Plotly, maps, assets, repositories, and exports into one focused studio.
+  enter: Enter the Studio
+  explore: Explore the workspace
+  runs: Runs in your browser
+  languages: JavaScript + Python
+  editor_notice: Localized code-editor interfaces will be available soon.
+  panels: Studio panels
+  files: Files
+  search: Search
+  assets: Assets
+  tasks: Tasks
+  example_code: Example Earth Engine code
+  zoom_in: Zoom in
+  zoom_out: Zoom out
+  temperature: Surface temperature
+  console: Console
+  ready: Ready — 12 scenes matched in 184 ms
+  run: Run
+  running: Running
+  evaluating: Evaluating image collection…
+  complete: Complete — layer rendered from 12 scenes in 231 ms
+  catalog: Catalog
+  datasets: 5,473 datasets
+  runtime: Runtime
+  python_ready: Python ready
+  highlights: Product highlights
+  proof_start: Designed for the work between
+  idea: idea
+  and: and
+  insight: insight
+  maps: Three map renderers
+  git: GitHub + GitLab
+  python_stack: NumPy + Matplotlib + Plotly
+  persistence: Browser-local persistence
+capabilities:
+  kicker: 01 / A better workspace
+  title_one: Earth Engine,
+  title_two: with more room to work.
+  intro: We build on the planetary-scale analysis of Google Earth Engine and extend the workspace around it—more languages, scientific Python, more map choices, richer repository flows, and tools that stay close to your code.
+  code_title: Scientific Python in your browser
+  code_body: Move between JavaScript and browser-side Python, then work with NumPy, Matplotlib, Plotly, completion, hover help, references, and familiar editor ergonomics.
+  map_title: Map without lock-in
+  map_body: Choose your renderer per map, draw and inspect geometry, compare views in tabs, and keep the same script-facing map API.
+  git_title: Work directly in your repositories
+  git_body: Open, edit, and save files in GitHub and GitLab repositories from the Studio, with conflict-aware saves that protect remote changes.
+  output_title: From output to artifact
+  output_body: Inspect structured console results, open Plotly or Matplotlib figures, manage cloud exports, or stream resumable local downloads.
+  figure: Figure
+workflow:
+  kicker: 02 / One continuous flow
+  title_one: Keep the context.
+  title_two: Lose the friction.
+  intro: Search data, write code, inspect the map, study a figure, manage an export, and return tomorrow to the workspace you left behind.
+  start: Start exploring
+  discover_title: Discover
+  discover_body: Search official and community catalogs without leaving the workspace.
+  discover_meta: 5,473 datasets
+  compose_title: Compose
+  compose_body: Build in JavaScript or Python, locally or directly from a GitHub or GitLab repository.
+  compose_meta: Code connected
+  observe_title: Observe
+  observe_body: Turn computations into explorable maps, charts, figures, and console values.
+  observe_meta: Live outputs
+  deliver_title: Deliver
+  deliver_body: Export to the cloud or download robust, resumable local artifacts.
+  deliver_meta: Cloud + local
+foundation:
+  base: Foundation
+  layer: Workspace layer
+  kicker: 03 / Built on a strong foundation
+  title_one: Extend the workflow.
+  title_two: Keep the engine.
+  body: Earth Engine Studio is an independent, open workspace built on top of Google Earth Engine. It keeps the platform’s analysis capabilities at the center while expanding how you write, navigate, visualize, and organize the work around them.
+  flexible_title: More flexible
+  flexible_body: Choose languages, maps, layouts, and local workflows.
+  connected_title: More connected
+  connected_body: Bring repositories, code, assets, tasks, and documentation together.
+  yours_title: More yours
+  yours_body: Persist your working context in the browser and shape the studio around the project.
+craft:
+  thoughtfully: Thoughtfully
+  vibe: vibe coded
+  agentic: agentic engineered.
+  body: Built by humans and agents who care about geospatial craft, useful tools, and the oddly satisfying feeling of a clean console.
+cta:
+  kicker: The planet is already running.
+  title_one: What will you build
+  title_two: on top of it?
+  open: Open Earth Engine Studio
+  note: No install. Open the studio in your browser.
+footer:
+  tagline: A modern workspace for planetary-scale geospatial work.
+  navigation: Footer navigation
+  disclaimer: Earth Engine Studio is an independent project and is not an official Google or Google Earth Engine product. Google Earth Engine is a trademark of Google LLC.

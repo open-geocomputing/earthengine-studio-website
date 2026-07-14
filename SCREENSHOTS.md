@@ -71,7 +71,7 @@ code-built illustration on the landing page.
 ## Screenshot-like visuals that are currently code
 
 The following page visuals may look like screenshots, but they are not image
-files. They are editable HTML in `index.html` and CSS in
+files. They are editable HTML in `_layouts/landing.html` and CSS in
 `assets/css/main.css`.
 
 | Surface | Current implementation | Future screenshot target | Capture status |

@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+- Added complete French, German, Spanish, Brazilian Portuguese, and Simplified
+  Chinese landing pages, backed by shared translation data, a responsive
+  language selector, and reciprocal `hreflang` metadata while keeping English
+  at `/`.
+- Expanded the Python positioning across every language with browser-side
+  NumPy, Matplotlib, and Plotly support, and noted that localized code-editor
+  interfaces are coming soon.
+- Added the public documentation at `https://docs.earthengine.studio/` to the
+  navigation and footer of every localized page.
 - Added a screenshot and visual replacement guide with current desktop, mobile,
   and social-card references; sanitized live Studio references for Sentinel-2,
   3D terrain, and Plotly output; an inventory of code-built interface visuals;

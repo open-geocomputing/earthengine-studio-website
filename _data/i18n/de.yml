@@ -1,0 +1,107 @@
+nav:
+  home: Earth Engine Studio Startseite
+  open_menu: Navigation öffnen
+  main: Hauptnavigation
+  capabilities: Funktionen
+  workflow: Arbeitsablauf
+  about: Über Studio
+  documentation: Dokumentation
+  open: Studio öffnen
+hero:
+  eyebrow: Offener Geodaten-Arbeitsbereich
+  title_one: Sehen Sie den Planeten.
+  title_two: Gestalten Sie, was folgt.
+  lede: Eine moderne Entwicklungsumgebung auf Basis von Google Earth Engine, die JavaScript und browserseitiges Python mit NumPy, Matplotlib, Plotly, Karten, Assets, Repositorys und Exporten in einem fokussierten Studio vereint.
+  enter: Studio starten
+  explore: Arbeitsbereich entdecken
+  runs: Läuft in Ihrem Browser
+  languages: JavaScript + Python
+  editor_notice: Die deutsche Oberfläche des Code-Editors wird bald verfügbar sein.
+  panels: Studio-Bereiche
+  files: Dateien
+  search: Suchen
+  assets: Assets
+  tasks: Aufgaben
+  example_code: Earth Engine Codebeispiel
+  zoom_in: Vergrößern
+  zoom_out: Verkleinern
+  temperature: Oberflächentemperatur
+  console: Konsole
+  ready: Bereit — 12 Szenen in 184 ms gefunden
+  run: Ausführen
+  running: Wird ausgeführt
+  evaluating: Bildsammlung wird ausgewertet…
+  complete: Fertig — Ebene aus 12 Szenen in 231 ms gerendert
+  catalog: Katalog
+  datasets: 5.473 Datensätze
+  runtime: Laufzeit
+  python_ready: Python bereit
+  highlights: Produkthighlights
+  proof_start: Entwickelt für die Arbeit zwischen
+  idea: Idee
+  and: und
+  insight: Erkenntnis
+  maps: Drei Karten-Renderer
+  git: GitHub + GitLab
+  python_stack: NumPy + Matplotlib + Plotly
+  persistence: Lokale Browser-Persistenz
+capabilities:
+  kicker: 01 / Ein besserer Arbeitsbereich
+  title_one: Earth Engine,
+  title_two: mit mehr Raum zum Arbeiten.
+  intro: Wir bauen auf der planetenweiten Analyse von Google Earth Engine auf und erweitern den Arbeitsbereich darum — mit mehr Sprachen, wissenschaftlichem Python, mehr Kartenoptionen, besseren Repository-Abläufen und Werkzeugen nahe am Code.
+  code_title: Wissenschaftliches Python im Browser
+  code_body: Wechseln Sie zwischen JavaScript und browserseitigem Python und nutzen Sie NumPy, Matplotlib, Plotly, Codevervollständigung, Direkthilfe, Referenzen und vertraute Editor-Funktionen.
+  map_title: Karten ohne Bindung
+  map_body: Wählen Sie den Renderer pro Karte, zeichnen und untersuchen Sie Geometrien, vergleichen Sie Ansichten in Tabs und behalten Sie dieselbe Karten-API im Skript.
+  git_title: Direkt in Ihren Repositorys arbeiten
+  git_body: Öffnen, bearbeiten und speichern Sie Dateien aus GitHub- und GitLab-Repositorys direkt in Studio. Konfliktbewusstes Speichern schützt entfernte Änderungen.
+  output_title: Vom Ergebnis zum Artefakt
+  output_body: Untersuchen Sie strukturierte Konsolenergebnisse, öffnen Sie Plotly- oder Matplotlib-Abbildungen, verwalten Sie Cloud-Exporte oder laden Sie lokal und fortsetzbar herunter.
+  figure: Abbildung
+workflow:
+  kicker: 02 / Ein durchgängiger Ablauf
+  title_one: Kontext behalten.
+  title_two: Reibung verlieren.
+  intro: Suchen Sie Daten, schreiben Sie Code, untersuchen Sie die Karte, analysieren Sie eine Abbildung, verwalten Sie einen Export und kehren Sie morgen zum gleichen Arbeitsbereich zurück.
+  start: Jetzt entdecken
+  discover_title: Entdecken
+  discover_body: Durchsuchen Sie offizielle und Community-Kataloge, ohne den Arbeitsbereich zu verlassen.
+  discover_meta: 5.473 Datensätze
+  compose_title: Entwickeln
+  compose_body: Arbeiten Sie in JavaScript oder Python, lokal oder direkt aus einem GitHub- oder GitLab-Repository.
+  compose_meta: Code verbunden
+  observe_title: Beobachten
+  observe_body: Verwandeln Sie Berechnungen in erkundbare Karten, Diagramme, Abbildungen und Konsolenwerte.
+  observe_meta: Live-Ausgaben
+  deliver_title: Bereitstellen
+  deliver_body: Exportieren Sie in die Cloud oder laden Sie robuste, fortsetzbare lokale Artefakte herunter.
+  deliver_meta: Cloud + lokal
+foundation:
+  base: Grundlage
+  layer: Arbeitsbereichsebene
+  kicker: 03 / Auf einer starken Grundlage
+  title_one: Den Arbeitsablauf erweitern.
+  title_two: Die Engine behalten.
+  body: Earth Engine Studio ist ein unabhängiger, offener Arbeitsbereich auf Basis von Google Earth Engine. Die Analysefunktionen der Plattform bleiben im Mittelpunkt, während Schreiben, Navigieren, Visualisieren und Organisieren erweitert werden.
+  flexible_title: Flexibler
+  flexible_body: Wählen Sie Sprachen, Karten, Layouts und lokale Abläufe.
+  connected_title: Vernetzter
+  connected_body: Bringen Sie Repositorys, Code, Assets, Aufgaben und Dokumentation zusammen.
+  yours_title: Persönlicher
+  yours_body: Speichern Sie Ihren Arbeitskontext im Browser und passen Sie Studio an das Projekt an.
+craft:
+  thoughtfully: Mit Bedacht
+  vibe: vibe-gecodet
+  agentic: agentisch entwickelt.
+  body: Entwickelt von Menschen und Agenten mit Sinn für georäumliches Handwerk, nützliche Werkzeuge und das seltsam befriedigende Gefühl einer sauberen Konsole.
+cta:
+  kicker: Der Planet läuft bereits.
+  title_one: Was werden Sie
+  title_two: darauf aufbauen?
+  open: Earth Engine Studio öffnen
+  note: Keine Installation. Öffnen Sie Studio im Browser.
+footer:
+  tagline: Ein moderner Arbeitsbereich für Geodatenarbeit im planetaren Maßstab.
+  navigation: Fußnavigation
+  disclaimer: Earth Engine Studio ist ein unabhängiges Projekt und kein offizielles Produkt von Google oder Google Earth Engine. Google Earth Engine ist eine Marke von Google LLC.

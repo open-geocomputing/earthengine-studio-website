@@ -1,0 +1,107 @@
+nav:
+  home: Earth Engine Studio 首页
+  open_menu: 打开导航
+  main: 主导航
+  capabilities: 功能
+  workflow: 工作流程
+  about: 关于
+  documentation: 文档
+  open: 打开 Studio
+hero:
+  eyebrow: 开放式地理空间工作区
+  title_one: 洞察地球。
+  title_two: 塑造未来。
+  lede: 基于 Google Earth Engine 构建的现代编程环境，将 JavaScript、浏览器端 Python、NumPy、Matplotlib、Plotly、地图、资产、代码仓库和导出功能汇聚在同一个专注的 Studio 中。
+  enter: 进入 Studio
+  explore: 探索工作区
+  runs: 在浏览器中运行
+  languages: JavaScript + Python
+  editor_notice: 代码编辑器的简体中文界面即将推出。
+  panels: Studio 面板
+  files: 文件
+  search: 搜索
+  assets: 资产
+  tasks: 任务
+  example_code: Earth Engine 示例代码
+  zoom_in: 放大
+  zoom_out: 缩小
+  temperature: 地表温度
+  console: 控制台
+  ready: 就绪 — 184 毫秒内匹配 12 个场景
+  run: 运行
+  running: 正在运行
+  evaluating: 正在计算影像集合…
+  complete: 完成 — 231 毫秒内由 12 个场景渲染图层
+  catalog: 数据目录
+  datasets: 5,473 个数据集
+  runtime: 运行环境
+  python_ready: Python 已就绪
+  highlights: 产品亮点
+  proof_start: 专为从
+  idea: 构想
+  and: 到
+  insight: 洞察
+  maps: 三种地图渲染器
+  git: GitHub + GitLab
+  python_stack: NumPy + Matplotlib + Plotly
+  persistence: 浏览器本地持久化
+capabilities:
+  kicker: 01 / 更出色的工作区
+  title_one: Earth Engine，
+  title_two: 更充裕的创作空间。
+  intro: 我们以 Google Earth Engine 的全球尺度分析能力为基础，扩展其周边工作区——支持更多语言、科学 Python、更多地图选择、更丰富的代码仓库流程，以及始终贴近代码的工具。
+  code_title: 浏览器中的科学 Python
+  code_body: 在 JavaScript 与浏览器端 Python 之间自由切换，并使用 NumPy、Matplotlib、Plotly、代码补全、悬停帮助、引用查找和熟悉的编辑体验。
+  map_title: 不受限制的地图体验
+  map_body: 为每张地图选择渲染器，绘制和检查几何图形，在标签页中比较视图，同时保持一致的脚本地图 API。
+  git_title: 直接操作您的代码仓库
+  git_body: 在 Studio 中打开、编辑并保存 GitHub 和 GitLab 仓库文件，使用冲突感知保存机制保护远程更改。
+  output_title: 从结果到成果
+  output_body: 检查结构化控制台结果，打开 Plotly 或 Matplotlib 图表，管理云端导出，或进行可恢复的本地下载。
+  figure: 图表
+workflow:
+  kicker: 02 / 连贯的工作流程
+  title_one: 保留上下文。
+  title_two: 告别繁琐。
+  intro: 搜索数据、编写代码、检查地图、研究图表、管理导出，并在第二天回到离开时的工作区。
+  start: 开始探索
+  discover_title: 发现
+  discover_body: 无需离开工作区即可搜索官方和社区数据目录。
+  discover_meta: 5,473 个数据集
+  compose_title: 编写
+  compose_body: 使用 JavaScript 或 Python，在本地或直接从 GitHub、GitLab 代码仓库进行开发。
+  compose_meta: 代码已连接
+  observe_title: 观察
+  observe_body: 将计算结果转化为可探索的地图、图表、绘图和控制台值。
+  observe_meta: 实时输出
+  deliver_title: 交付
+  deliver_body: 导出到云端，或下载稳健且可恢复的本地成果。
+  deliver_meta: 云端 + 本地
+foundation:
+  base: 基础
+  layer: 工作区层
+  kicker: 03 / 构建于强大基础之上
+  title_one: 扩展工作流程。
+  title_two: 保留核心引擎。
+  body: Earth Engine Studio 是一个构建于 Google Earth Engine 之上的独立开放工作区。它以平台分析能力为核心，同时扩展代码编写、导航、可视化和工作组织方式。
+  flexible_title: 更灵活
+  flexible_body: 自由选择语言、地图、布局和本地工作流程。
+  connected_title: 更互联
+  connected_body: 将代码仓库、代码、资产、任务和文档汇聚一处。
+  yours_title: 更属于您
+  yours_body: 在浏览器中保留工作上下文，并根据项目塑造 Studio。
+craft:
+  thoughtfully: 用心地
+  vibe: 凭感觉写代码
+  agentic: 由智能体协作工程化打造。
+  body: 由重视地理空间专业性、实用工具，以及整洁控制台所带来的奇妙满足感的人类和智能体共同构建。
+cta:
+  kicker: 地球已经在运转。
+  title_one: 您将在其上
+  title_two: 创造什么？
+  open: 打开 Earth Engine Studio
+  note: 无需安装，直接在浏览器中打开 Studio。
+footer:
+  tagline: 面向全球尺度地理空间工作的现代工作区。
+  navigation: 页脚导航
+  disclaimer: Earth Engine Studio 是一个独立项目，并非 Google 或 Google Earth Engine 的官方产品。Google Earth Engine 是 Google LLC 的商标。

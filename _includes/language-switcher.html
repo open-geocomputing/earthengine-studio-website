@@ -1,0 +1,21 @@
+{% assign current_language = page.lang | default: site.lang %}
+{% assign current_short = 'EN' %}
+{% for language in site.data.languages %}
+  {% if language.code == current_language %}
+    {% assign current_short = language.short %}
+  {% endif %}
+{% endfor %}
+<details class="language-switcher" data-language-switcher>
+  <summary>
+    <span class="sr-only">{{ page.language_label | default: 'Choose language' }}</span>
+    <span aria-hidden="true">{{ current_short }}</span>
+    <span class="language-chevron" aria-hidden="true">⌄</span>
+  </summary>
+  <div class="language-menu">
+    {% for language in site.data.languages %}
+    <a href="{{ language.path | relative_url }}" lang="{{ language.code }}" hreflang="{{ language.hreflang }}"{% if language.code == current_language %} aria-current="page"{% endif %}>
+      <span>{{ language.short }}</span>{{ language.name }}
+    </a>
+    {% endfor %}
+  </div>
+</details>

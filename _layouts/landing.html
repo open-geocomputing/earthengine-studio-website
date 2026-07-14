@@ -1,0 +1,213 @@
+---
+layout: default
+---
+{% assign t = site.data.i18n[page.translation_key] %}
+<header class="site-header" data-header>
+  <div class="shell nav-wrap">
+    <a class="brand" href="#top" aria-label="{{ t.nav.home }}">
+      <img src="{{ '/assets/images/orbit-studio.svg' | relative_url }}" width="42" height="42" alt="">
+      <span>Earth Engine<br><strong>Studio</strong></span>
+    </a>
+
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+      <span class="sr-only">{{ t.nav.open_menu }}</span>
+      <span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="{{ t.nav.main }}" data-menu>
+      <a href="#capabilities">{{ t.nav.capabilities }}</a>
+      <a href="#workflow">{{ t.nav.workflow }}</a>
+      <a href="#about">{{ t.nav.about }}</a>
+      <a href="https://docs.earthengine.studio/">{{ t.nav.documentation }} <span aria-hidden="true">↗</span></a>
+      {% include language-switcher.html %}
+      <a class="nav-cta" href="https://code.earthengine.studio/">{{ t.nav.open }} <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+    <div class="shell hero-layout">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><i></i> {{ t.hero.eyebrow }}</div>
+        <h1 class="reveal">{{ t.hero.title_one }}<br><span>{{ t.hero.title_two }}</span></h1>
+        <p class="hero-lede reveal">{{ t.hero.lede }}</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary" href="https://code.earthengine.studio/">
+            {{ t.hero.enter }} <span aria-hidden="true">→</span>
+          </a>
+          <a class="text-link" href="#capabilities">{{ t.hero.explore }} <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note reveal">
+          <span class="status-dot"></span>
+          <span>{{ t.hero.runs }}</span>
+          <span class="note-divider"></span>
+          <span>{{ t.hero.languages }}</span>
+        </div>
+        <p class="locale-notice reveal"><span aria-hidden="true">◎</span>{{ t.hero.editor_notice }}</p>
+      </div>
+
+      <div class="product-stage reveal" data-product-demo>
+        <div class="orbit orbit-a" aria-hidden="true"></div>
+        <div class="orbit orbit-b" aria-hidden="true"></div>
+        <div class="product-window">
+          <div class="window-bar">
+            <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="window-title"><span></span> land-surface-temperature.js</div>
+            <div class="window-mode">JS</div>
+          </div>
+          <div class="workspace">
+            <aside class="workspace-rail" aria-label="{{ t.hero.panels }}">
+              <button class="rail-active" type="button" aria-label="{{ t.hero.files }}">⌘</button>
+              <button type="button" aria-label="{{ t.hero.search }}">⌕</button>
+              <button type="button" aria-label="{{ t.hero.assets }}">◇</button>
+              <button type="button" aria-label="{{ t.hero.tasks }}">⇅</button>
+            </aside>
+            <div class="code-panel" aria-label="{{ t.hero.example_code }}">
+              <div class="code-tabs"><span class="active">temperature.js</span><span>analysis.py</span></div>
+              <pre><span class="ln">1</span><span class="kw">var</span> landsat = ee.<span class="fn">ImageCollection</span>(<span class="str">'LANDSAT/LC08/C02/T1_L2'</span>)
+<span class="ln">2</span>  .<span class="fn">filterBounds</span>(aoi)
+<span class="ln">3</span>  .<span class="fn">filterDate</span>(<span class="str">'2025-06-01'</span>, <span class="str">'2025-08-31'</span>);
+<span class="ln">4</span>
+<span class="ln">5</span><span class="kw">var</span> surfaceTemp = landsat.<span class="fn">median</span>()
+<span class="ln">6</span>  .<span class="fn">select</span>(<span class="str">'ST_B10'</span>)
+<span class="ln">7</span>  .<span class="fn">multiply</span>(<span class="num">0.00341802</span>)
+<span class="ln">8</span>  .<span class="fn">add</span>(<span class="num">149.0</span>);
+<span class="ln">9</span>
+<span class="ln">10</span>Map.<span class="fn">addLayer</span>(surfaceTemp, thermal, <span class="str">'Surface temperature'</span>);</pre>
+              <div class="code-status"><span>Ln 10, Col 68</span><span>Earth Engine connected</span></div>
+            </div>
+            <div class="map-panel">
+              <div class="map-terrain" aria-hidden="true">
+                <i class="terrain terrain-one"></i><i class="terrain terrain-two"></i><i class="terrain terrain-three"></i><i class="terrain terrain-four"></i>
+                <i class="heat heat-one"></i><i class="heat heat-two"></i><i class="heat heat-three"></i><div class="scan-line"></div>
+              </div>
+              <div class="map-toolbar"><button type="button" aria-label="{{ t.hero.zoom_in }}">+</button><button type="button" aria-label="{{ t.hero.zoom_out }}">−</button></div>
+              <div class="map-label"><i></i> {{ t.hero.temperature }} <span>24–46 °C</span></div>
+              <div class="map-coords">34.0522° N&nbsp;&nbsp; 118.2437° W</div>
+            </div>
+          </div>
+          <div class="console-bar">
+            <div><span>{{ t.hero.console }}</span><span>{{ t.hero.tasks }}</span></div>
+            <p><i></i><span data-run-status data-evaluating="{{ t.hero.evaluating }}" data-complete="{{ t.hero.complete }}" aria-live="polite">{{ t.hero.ready }}</span></p>
+            <button type="button" data-run-demo data-run-label="{{ t.hero.run }}" data-running-label="{{ t.hero.running }}"><span class="play" aria-hidden="true">▶</span> {{ t.hero.run }}</button>
+          </div>
+        </div>
+        <div class="floating-chip chip-one"><i></i><span><small>{{ t.hero.catalog }}</small>{{ t.hero.datasets }}</span></div>
+        <div class="floating-chip chip-two"><span class="python-mark">Py</span><span><small>{{ t.hero.runtime }}</small>{{ t.hero.python_ready }}</span></div>
+      </div>
+    </div>
+
+    <div class="shell proof-strip reveal" aria-label="{{ t.hero.highlights }}">
+      <p>{{ t.hero.proof_start }} <strong>{{ t.hero.idea }}</strong> {{ t.hero.and }} <strong>{{ t.hero.insight }}</strong>.</p>
+      <ul><li>{{ t.hero.maps }}</li><li>{{ t.hero.git }}</li><li>{{ t.hero.python_stack }}</li><li>{{ t.hero.persistence }}</li></ul>
+    </div>
+  </section>
+
+  <section class="section section-light" id="capabilities">
+    <div class="shell">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">{{ t.capabilities.kicker }}</span><h2>{{ t.capabilities.title_one }}<br><em>{{ t.capabilities.title_two }}</em></h2></div>
+        <p>{{ t.capabilities.intro }}</p>
+      </div>
+
+      <div class="capability-grid">
+        <article class="feature-card feature-code reveal">
+          <div class="card-number">01</div>
+          <div class="language-pills"><span>JavaScript</span><span>Python</span><span>NumPy</span></div>
+          <div class="mini-editor" aria-hidden="true">
+            <div><span>1</span><b>import</b> ee, numpy <b>as</b> np</div>
+            <div><span>2</span><b>import</b> matplotlib.pyplot <b>as</b> plt</div>
+            <div><span>3</span>image = ee.<i>Image</i>(<u>"COPERNICUS/S2"</u>)</div>
+            <div class="cursor"><span>4</span>Map.<i>addLayer</i>(image)<b></b></div>
+          </div>
+          <div class="card-copy"><h3>{{ t.capabilities.code_title }}</h3><p>{{ t.capabilities.code_body }}</p></div>
+        </article>
+
+        <article class="feature-card feature-map reveal">
+          <div class="card-number">02</div>
+          <div class="map-choice" aria-hidden="true"><div class="map-orb"><i></i><i></i><i></i><span></span></div><div class="provider-stack"><span class="active">MapLibre</span><span>OpenLayers</span><span>Google Maps</span></div></div>
+          <div class="card-copy"><h3>{{ t.capabilities.map_title }}</h3><p>{{ t.capabilities.map_body }}</p></div>
+        </article>
+
+        <article class="feature-card feature-git reveal">
+          <div class="card-number">03</div>
+          <div class="branch-visual" aria-hidden="true"><span class="branch-line main-line"></span><span class="branch-line side-line"></span><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i><div class="file-pill file-one">analysis.py <b>+12</b></div><div class="file-pill file-two">map.js <b>+4</b></div></div>
+          <div class="card-copy"><h3>{{ t.capabilities.git_title }}</h3><p>{{ t.capabilities.git_body }}</p></div>
+        </article>
+
+        <article class="feature-card feature-output reveal">
+          <div class="card-number">04</div>
+          <div class="output-visual" aria-hidden="true"><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="chart-line"></span><div class="output-tabs"><span>{{ t.hero.console }}</span><span>{{ t.capabilities.figure }}</span><span>{{ t.hero.tasks }}</span></div></div>
+          <div class="card-copy"><h3>{{ t.capabilities.output_title }}</h3><p>{{ t.capabilities.output_body }}</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section workflow-section" id="workflow">
+    <div class="shell workflow-layout">
+      <div class="workflow-copy reveal">
+        <span class="section-kicker">{{ t.workflow.kicker }}</span>
+        <h2>{{ t.workflow.title_one }}<br><em>{{ t.workflow.title_two }}</em></h2>
+        <p>{{ t.workflow.intro }}</p>
+        <a class="text-link text-link-light" href="https://code.earthengine.studio/">{{ t.workflow.start }} <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="workflow-steps">
+        <li class="reveal"><span>01</span><div><h3>{{ t.workflow.discover_title }}</h3><p>{{ t.workflow.discover_body }}</p></div><b>{{ t.workflow.discover_meta }}</b></li>
+        <li class="reveal"><span>02</span><div><h3>{{ t.workflow.compose_title }}</h3><p>{{ t.workflow.compose_body }}</p></div><b>{{ t.workflow.compose_meta }}</b></li>
+        <li class="reveal"><span>03</span><div><h3>{{ t.workflow.observe_title }}</h3><p>{{ t.workflow.observe_body }}</p></div><b>{{ t.workflow.observe_meta }}</b></li>
+        <li class="reveal"><span>04</span><div><h3>{{ t.workflow.deliver_title }}</h3><p>{{ t.workflow.deliver_body }}</p></div><b>{{ t.workflow.deliver_meta }}</b></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section foundation-section" id="about">
+    <div class="shell foundation-layout">
+      <div class="foundation-visual reveal" aria-hidden="true">
+        <div class="foundation-globe"><span class="longitude long-one"></span><span class="longitude long-two"></span><span class="latitude lat-one"></span><span class="latitude lat-two"></span><i></i></div>
+        <div class="foundation-ring ring-one"></div><div class="foundation-ring ring-two"></div>
+        <div class="foundation-label label-core"><small>{{ t.foundation.base }}</small>Google Earth Engine</div>
+        <div class="foundation-label label-studio"><small>{{ t.foundation.layer }}</small>Earth Engine Studio</div>
+      </div>
+      <div class="foundation-copy reveal">
+        <span class="section-kicker">{{ t.foundation.kicker }}</span>
+        <h2>{{ t.foundation.title_one }}<br><em>{{ t.foundation.title_two }}</em></h2>
+        <p class="large-copy">{{ t.foundation.body }}</p>
+        <div class="foundation-points">
+          <div><span>+</span><p><strong>{{ t.foundation.flexible_title }}</strong>{{ t.foundation.flexible_body }}</p></div>
+          <div><span>+</span><p><strong>{{ t.foundation.connected_title }}</strong>{{ t.foundation.connected_body }}</p></div>
+          <div><span>+</span><p><strong>{{ t.foundation.yours_title }}</strong>{{ t.foundation.yours_body }}</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="craft-section">
+    <div class="shell craft-inner reveal"><div class="craft-mark">⌁</div><p>{{ t.craft.thoughtfully }} <s>{{ t.craft.vibe }}</s><br><strong>{{ t.craft.agentic }}</strong></p><span>{{ t.craft.body }}</span></div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-grid" aria-hidden="true"></div>
+    <div class="shell cta-inner reveal">
+      <img src="{{ '/assets/images/orbit-studio.svg' | relative_url }}" width="110" height="110" alt="">
+      <span class="section-kicker">{{ t.cta.kicker }}</span>
+      <h2>{{ t.cta.title_one }}<br><em>{{ t.cta.title_two }}</em></h2>
+      <a class="button button-primary button-large" href="https://code.earthengine.studio/">{{ t.cta.open }} <span aria-hidden="true">→</span></a>
+      <p>{{ t.cta.note }}</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-main">
+    <a class="brand footer-brand" href="#top"><img src="{{ '/assets/images/orbit-studio.svg' | relative_url }}" width="46" height="46" alt=""><span>Earth Engine<br><strong>Studio</strong></span></a>
+    <p>{{ t.footer.tagline }}</p>
+    <nav aria-label="{{ t.footer.navigation }}"><a href="#capabilities">{{ t.nav.capabilities }}</a><a href="#workflow">{{ t.nav.workflow }}</a><a href="https://docs.earthengine.studio/">{{ t.nav.documentation }} ↗</a><a href="https://code.earthengine.studio/">{{ t.nav.open }} ↗</a></nav>
+  </div>
+  <div class="shell footer-legal"><p>{{ t.footer.disclaimer }}</p><p>© <span data-year>2026</span> Earth Engine Studio</p></div>
+</footer>
