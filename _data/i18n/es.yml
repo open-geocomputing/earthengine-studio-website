@@ -17,6 +17,8 @@ hero:
   runs: Funciona en su navegador
   languages: JavaScript + Python
   editor_notice: La interfaz en español del editor de código estará disponible próximamente.
+  capture_label: Captura real de Studio
+  capture_alt: Earth Engine Studio ejecutando un flujo JavaScript de Sentinel-2 con código, resultados de consola, scripts y mapa
   panels: Paneles de Studio
   files: Archivos
   search: Buscar
@@ -55,10 +57,12 @@ capabilities:
   code_body: Alterne entre JavaScript y Python en el navegador y utilice NumPy, Matplotlib, Plotly, autocompletado, ayuda contextual, referencias y una experiencia de edición familiar.
   map_title: Mapas sin dependencia
   map_body: Elija el motor para cada mapa, dibuje e inspeccione geometrías, compare vistas en pestañas y mantenga la misma API cartográfica en sus scripts.
+  map_capture_alt: Earth Engine Studio mostrando JavaScript, resultados de consola y un mapa tridimensional del terreno de Innsbruck
   git_title: Trabaje directamente en sus repositorios
   git_body: Abra, edite y guarde archivos de repositorios de GitHub y GitLab desde Studio, con guardados conscientes de conflictos que protegen los cambios remotos.
   output_title: Del resultado al artefacto
   output_body: Inspeccione resultados estructurados de la consola, abra figuras de Plotly o Matplotlib, gestione exportaciones en la nube o descargue archivos locales reanudables.
+  output_capture_alt: Earth Engine Studio mostrando una serie temporal interactiva de Plotly con controles de exportación
   figure: Figura
 workflow:
   kicker: 02 / Un flujo continuo

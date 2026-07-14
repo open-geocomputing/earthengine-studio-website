@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Replaced the invented hero editor/map interface and illustrative map/output
+  panels with optimized, sanitized captures from the real Studio development
+  editor; the remaining Python visual is explicitly presented as a code sample.
 - Added complete French, German, Spanish, Brazilian Portuguese, and Simplified
   Chinese landing pages, backed by shared translation data, a responsive
   language selector, and reciprocal `hreflang` metadata while keeping English
@@ -17,8 +20,8 @@
   reserved production targets; and capture, privacy, sizing, optimization, and
   acceptance checklists.
 - Built a complete responsive Jekyll landing page for Earth Engine Studio with
-  an orbital visual system, an interactive editor/map demonstration, capability
-  and workflow sections, accessible navigation, reduced-motion support, and a
+  an orbital visual system, real product captures, capability and workflow
+  sections, accessible navigation, reduced-motion support, and a
   custom 404 page.
 - Added product positioning for JavaScript and Python, direct GitHub and GitLab
   repository file workflows with conflict-aware saves, flexible map renderers,

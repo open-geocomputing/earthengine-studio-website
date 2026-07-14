@@ -54,6 +54,7 @@ are not changed by the site build.
 - `_layouts/landing.html` — shared translated landing page and product demonstration
 - `_data/i18n/` — complete landing-page copy for all six languages
 - `_layouts/default.html` — metadata and shared document shell
+- `assets/images/product/` — optimized, sanitized captures of the real Studio interface
 - `assets/` — site styles, interaction code, brand assets, and social preview
 - `404.html` — custom not-found page
 - `_config.yml` — Jekyll and canonical-domain configuration
@@ -84,6 +85,10 @@ See [the screenshot and visual replacement guide](SCREENSHOTS.md) for the
 current desktop/mobile references, sanitized live Studio captures, production
 image inventory, remaining product capture list, dimensions, privacy rules, and
 replacement checklist.
+
+The published product visuals are exported from real sessions on the Studio
+development editor. Interface-shaped mockups must not be substituted for these
+captures; decorative diagrams and code samples should remain visibly abstract.
 
 ## Product relationship
 

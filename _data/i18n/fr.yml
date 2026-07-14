@@ -17,6 +17,8 @@ hero:
   runs: Fonctionne dans votre navigateur
   languages: JavaScript + Python
   editor_notice: L’interface française de l’éditeur de code sera bientôt disponible.
+  capture_label: Capture réelle de Studio
+  capture_alt: Earth Engine Studio exécutant un flux JavaScript Sentinel-2 avec code, résultats de console, scripts et carte
   panels: Panneaux de Studio
   files: Fichiers
   search: Rechercher
@@ -54,10 +56,12 @@ capabilities:
   code_body: Passez de JavaScript à Python dans le navigateur, puis utilisez NumPy, Matplotlib, Plotly, l’autocomplétion, l’aide contextuelle, les références et une ergonomie familière.
   map_title: Cartographiez sans dépendance imposée
   map_body: Choisissez le moteur de chaque carte, dessinez et inspectez les géométries, comparez les vues dans des onglets et conservez la même API cartographique dans vos scripts.
+  map_capture_alt: Earth Engine Studio affichant JavaScript, les résultats de la console et une carte de terrain en trois dimensions d’Innsbruck
   git_title: Travaillez directement dans vos dépôts
   git_body: Ouvrez, modifiez et enregistrez les fichiers de dépôts GitHub et GitLab depuis Studio, avec des sauvegardes conscientes des conflits qui protègent les changements distants.
   output_title: Du résultat à l’artefact
   output_body: Inspectez les résultats structurés de la console, ouvrez des figures Plotly ou Matplotlib, gérez les exports cloud ou téléchargez localement avec reprise.
+  output_capture_alt: Earth Engine Studio affichant une série temporelle Plotly interactive avec ses contrôles d’export
   figure: Figure
 workflow:
   kicker: 02 / Un flux continu

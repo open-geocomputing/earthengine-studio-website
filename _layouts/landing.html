@@ -51,54 +51,13 @@ layout: default
         <p class="locale-notice reveal"><span aria-hidden="true">◎</span>{{ t.hero.editor_notice }}</p>
       </div>
 
-      <div class="product-stage reveal" data-product-demo>
+      <div class="product-stage product-capture reveal">
         <div class="orbit orbit-a" aria-hidden="true"></div>
         <div class="orbit orbit-b" aria-hidden="true"></div>
-        <div class="product-window">
-          <div class="window-bar">
-            <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div class="window-title"><span></span> land-surface-temperature.js</div>
-            <div class="window-mode">JS</div>
-          </div>
-          <div class="workspace">
-            <aside class="workspace-rail" aria-label="{{ t.hero.panels }}">
-              <button class="rail-active" type="button" aria-label="{{ t.hero.files }}">⌘</button>
-              <button type="button" aria-label="{{ t.hero.search }}">⌕</button>
-              <button type="button" aria-label="{{ t.hero.assets }}">◇</button>
-              <button type="button" aria-label="{{ t.hero.tasks }}">⇅</button>
-            </aside>
-            <div class="code-panel" aria-label="{{ t.hero.example_code }}">
-              <div class="code-tabs"><span class="active">temperature.js</span><span>analysis.py</span></div>
-              <pre><span class="ln">1</span><span class="kw">var</span> landsat = ee.<span class="fn">ImageCollection</span>(<span class="str">'LANDSAT/LC08/C02/T1_L2'</span>)
-<span class="ln">2</span>  .<span class="fn">filterBounds</span>(aoi)
-<span class="ln">3</span>  .<span class="fn">filterDate</span>(<span class="str">'2025-06-01'</span>, <span class="str">'2025-08-31'</span>);
-<span class="ln">4</span>
-<span class="ln">5</span><span class="kw">var</span> surfaceTemp = landsat.<span class="fn">median</span>()
-<span class="ln">6</span>  .<span class="fn">select</span>(<span class="str">'ST_B10'</span>)
-<span class="ln">7</span>  .<span class="fn">multiply</span>(<span class="num">0.00341802</span>)
-<span class="ln">8</span>  .<span class="fn">add</span>(<span class="num">149.0</span>);
-<span class="ln">9</span>
-<span class="ln">10</span>Map.<span class="fn">addLayer</span>(surfaceTemp, thermal, <span class="str">'Surface temperature'</span>);</pre>
-              <div class="code-status"><span>Ln 10, Col 68</span><span>Earth Engine connected</span></div>
-            </div>
-            <div class="map-panel">
-              <div class="map-terrain" aria-hidden="true">
-                <i class="terrain terrain-one"></i><i class="terrain terrain-two"></i><i class="terrain terrain-three"></i><i class="terrain terrain-four"></i>
-                <i class="heat heat-one"></i><i class="heat heat-two"></i><i class="heat heat-three"></i><div class="scan-line"></div>
-              </div>
-              <div class="map-toolbar"><button type="button" aria-label="{{ t.hero.zoom_in }}">+</button><button type="button" aria-label="{{ t.hero.zoom_out }}">−</button></div>
-              <div class="map-label"><i></i> {{ t.hero.temperature }} <span>24–46 °C</span></div>
-              <div class="map-coords">34.0522° N&nbsp;&nbsp; 118.2437° W</div>
-            </div>
-          </div>
-          <div class="console-bar">
-            <div><span>{{ t.hero.console }}</span><span>{{ t.hero.tasks }}</span></div>
-            <p><i></i><span data-run-status data-evaluating="{{ t.hero.evaluating }}" data-complete="{{ t.hero.complete }}" aria-live="polite">{{ t.hero.ready }}</span></p>
-            <button type="button" data-run-demo data-run-label="{{ t.hero.run }}" data-running-label="{{ t.hero.running }}"><span class="play" aria-hidden="true">▶</span> {{ t.hero.run }}</button>
-          </div>
-        </div>
-        <div class="floating-chip chip-one"><i></i><span><small>{{ t.hero.catalog }}</small>{{ t.hero.datasets }}</span></div>
-        <div class="floating-chip chip-two"><span class="python-mark">Py</span><span><small>{{ t.hero.runtime }}</small>{{ t.hero.python_ready }}</span></div>
+        <a class="product-window product-window-real" href="https://code.earthengine.studio/">
+          <img src="{{ '/assets/images/product/hero-workspace.webp' | relative_url }}" width="1600" height="940" alt="{{ t.hero.capture_alt }}">
+          <span class="capture-label"><i></i>{{ t.hero.capture_label }} <b aria-hidden="true">↗</b></span>
+        </a>
       </div>
     </div>
 
@@ -119,18 +78,17 @@ layout: default
         <article class="feature-card feature-code reveal">
           <div class="card-number">01</div>
           <div class="language-pills"><span>JavaScript</span><span>Python</span><span>NumPy</span></div>
-          <div class="mini-editor" aria-hidden="true">
-            <div><span>1</span><b>import</b> ee, numpy <b>as</b> np</div>
-            <div><span>2</span><b>import</b> matplotlib.pyplot <b>as</b> plt</div>
-            <div><span>3</span>image = ee.<i>Image</i>(<u>"COPERNICUS/S2"</u>)</div>
-            <div class="cursor"><span>4</span>Map.<i>addLayer</i>(image)<b></b></div>
-          </div>
+          <div class="code-sample"><small>Python · NumPy · Matplotlib</small><pre><code><b>import</b> ee, numpy <b>as</b> np
+<b>import</b> matplotlib.pyplot <b>as</b> plt
+
+image = ee.<i>Image</i>(<u>"COPERNICUS/S2"</u>)
+Map.<i>addLayer</i>(image)</code></pre></div>
           <div class="card-copy"><h3>{{ t.capabilities.code_title }}</h3><p>{{ t.capabilities.code_body }}</p></div>
         </article>
 
         <article class="feature-card feature-map reveal">
           <div class="card-number">02</div>
-          <div class="map-choice" aria-hidden="true"><div class="map-orb"><i></i><i></i><i></i><span></span></div><div class="provider-stack"><span class="active">MapLibre</span><span>OpenLayers</span><span>Google Maps</span></div></div>
+          <div class="feature-shot feature-shot-map"><img src="{{ '/assets/images/product/map-workspace.webp' | relative_url }}" width="1600" height="940" alt="{{ t.capabilities.map_capture_alt }}"></div>
           <div class="card-copy"><h3>{{ t.capabilities.map_title }}</h3><p>{{ t.capabilities.map_body }}</p></div>
         </article>
 
@@ -142,7 +100,7 @@ layout: default
 
         <article class="feature-card feature-output reveal">
           <div class="card-number">04</div>
-          <div class="output-visual" aria-hidden="true"><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="chart-line"></span><div class="output-tabs"><span>{{ t.hero.console }}</span><span>{{ t.capabilities.figure }}</span><span>{{ t.hero.tasks }}</span></div></div>
+          <div class="feature-shot feature-shot-output"><img src="{{ '/assets/images/product/output-workflow.webp' | relative_url }}" width="1600" height="940" alt="{{ t.capabilities.output_capture_alt }}"></div>
           <div class="card-copy"><h3>{{ t.capabilities.output_title }}</h3><p>{{ t.capabilities.output_body }}</p></div>
         </article>
       </div>

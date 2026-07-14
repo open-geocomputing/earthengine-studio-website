@@ -17,6 +17,8 @@ hero:
   runs: Runs in your browser
   languages: JavaScript + Python
   editor_notice: Localized code-editor interfaces will be available soon.
+  capture_label: Real Studio capture
+  capture_alt: Earth Engine Studio running a Sentinel-2 JavaScript workflow with code, Console results, scripts, and a map
   panels: Studio panels
   files: Files
   search: Search
@@ -54,10 +56,12 @@ capabilities:
   code_body: Move between JavaScript and browser-side Python, then work with NumPy, Matplotlib, Plotly, completion, hover help, references, and familiar editor ergonomics.
   map_title: Map without lock-in
   map_body: Choose your renderer per map, draw and inspect geometry, compare views in tabs, and keep the same script-facing map API.
+  map_capture_alt: Earth Engine Studio showing JavaScript, Console results, and a three-dimensional terrain map of Innsbruck
   git_title: Work directly in your repositories
   git_body: Open, edit, and save files in GitHub and GitLab repositories from the Studio, with conflict-aware saves that protect remote changes.
   output_title: From output to artifact
   output_body: Inspect structured console results, open Plotly or Matplotlib figures, manage cloud exports, or stream resumable local downloads.
+  output_capture_alt: Earth Engine Studio displaying an interactive Plotly time-series figure with export controls
   figure: Figure
 workflow:
   kicker: 02 / One continuous flow

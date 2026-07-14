@@ -16,6 +16,9 @@ CSS.
 | `docs/screenshots/product-sentinel-workspace.png` | Real editor, Console, and 2D map reference | No | `1600 × 940` PNG | Studio layout or map workflow changes |
 | `docs/screenshots/product-innsbruck-terrain.png` | Real editor, Console, and 3D map reference | No | `1600 × 940` PNG | Studio 3D view or terrain controls change |
 | `docs/screenshots/product-plotly-output.png` | Real maximized Plotly output reference | No | `1600 × 940` PNG | Figure tabs, controls, or export workflow changes |
+| `assets/images/product/hero-workspace.webp` | Real editor, Console, scripts, and map hero | Yes | `1600 × 940` WebP | Sentinel workflow or Studio layout changes |
+| `assets/images/product/map-workspace.webp` | Real JavaScript, Console, and 3D terrain card | Yes | `1600 × 940` WebP | Studio 3D view or terrain controls change |
+| `assets/images/product/output-workflow.webp` | Real Plotly output card | Yes | `1600 × 940` WebP | Figure tabs, controls, or export workflow changes |
 | `assets/images/orbit-studio.svg` | Logo and favicon | Yes | Vector SVG | Brand mark changes; this is not a screenshot |
 
 All files under `docs/screenshots/` are documentation references only. Jekyll
@@ -64,30 +67,27 @@ a clean reference for the charts and figures section.
 
 ![Studio Plotly output](docs/screenshots/product-plotly-output.png)
 
-These PNGs are source references, not yet optimized production assets. Crop and
-export the selected image to its target WebP dimensions only when replacing a
-code-built illustration on the landing page.
+These PNGs are the lossless source references. Their optimized WebP exports in
+`assets/images/product/` are the production images used by the landing page.
 
-## Screenshot-like visuals that are currently code
+## Visual implementation inventory
 
-The following page visuals may look like screenshots, but they are not image
-files. They are editable HTML in `_layouts/landing.html` and CSS in
-`assets/css/main.css`.
+Product-interface imagery must come from real Studio captures. Code and CSS may
+still provide clearly abstract diagrams or truthful code samples, but must not
+imitate a product screenshot.
 
-| Surface | Current implementation | Future screenshot target | Capture status |
+| Surface | Current implementation | Source or next target | Status |
 | --- | --- | --- | --- |
-| Hero editor, map, and console | `.product-window` | `assets/images/product/hero-workspace.webp`, `1800 × 1200` | Sentinel-2 source reference ready |
-| JavaScript and Python editor card | `.mini-editor` | `assets/images/product/language-workflow.webp`, `1200 × 900` | Python-specific capture still needed |
-| Map renderer card | `.map-choice` | `assets/images/product/map-workspace.webp`, `1200 × 900` | 2D and 3D source references ready; drawing/inspection state still needed |
-| GitHub and GitLab repository card | `.branch-visual` | `assets/images/product/repository-workflow.webp`, `1200 × 900` | Sanitized demo repository still needed |
-| Console, figure, and task card | `.output-visual` | `assets/images/product/output-workflow.webp`, `1200 × 900` | Plotly source reference ready; combined Console/Tasks view still needed |
+| Hero editor, map, and Console | Real WebP screenshot | `product-sentinel-workspace.png` | Published |
+| JavaScript and Python card | Semantic Python code sample | Optional real Python workflow capture | Truthful sample; not presented as UI |
+| Map renderer card | Real WebP screenshot | `product-innsbruck-terrain.png` | Published |
+| GitHub and GitLab repository card | Abstract branch diagram | `assets/images/product/repository-workflow.webp` | Real sanitized repository capture still needed |
+| Console, figure, and task card | Real WebP screenshot | `product-plotly-output.png` | Published |
 | Earth Engine foundation graphic | `.foundation-visual` | Keep code-based unless the brand direction changes | No capture needed |
 
-The `assets/images/product/` filenames are reserved targets and are not created
-until real product screenshots are ready. When a screenshot replaces a coded
-illustration, keep the surrounding card copy and responsive container, add
-meaningful alternative text, and remove only the HTML/CSS that the image makes
-obsolete.
+When a screenshot is refreshed, keep the surrounding card copy and responsive
+container, provide meaningful localized alternative text, and update both the
+lossless source PNG and optimized production WebP in the same commit.
 
 ## Product screenshot capture checklist
 

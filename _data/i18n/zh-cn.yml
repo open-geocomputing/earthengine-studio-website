@@ -17,6 +17,8 @@ hero:
   runs: 在浏览器中运行
   languages: JavaScript + Python
   editor_notice: 代码编辑器的简体中文界面即将推出。
+  capture_label: Studio 实际界面
+  capture_alt: Earth Engine Studio 正在运行 Sentinel-2 JavaScript 工作流程，画面包含代码、控制台结果、脚本和地图
   panels: Studio 面板
   files: 文件
   search: 搜索
@@ -54,10 +56,12 @@ capabilities:
   code_body: 在 JavaScript 与浏览器端 Python 之间自由切换，并使用 NumPy、Matplotlib、Plotly、代码补全、悬停帮助、引用查找和熟悉的编辑体验。
   map_title: 不受限制的地图体验
   map_body: 为每张地图选择渲染器，绘制和检查几何图形，在标签页中比较视图，同时保持一致的脚本地图 API。
+  map_capture_alt: Earth Engine Studio 展示 JavaScript、控制台结果和因斯布鲁克三维地形地图
   git_title: 直接操作您的代码仓库
   git_body: 在 Studio 中打开、编辑并保存 GitHub 和 GitLab 仓库文件，使用冲突感知保存机制保护远程更改。
   output_title: 从结果到成果
   output_body: 检查结构化控制台结果，打开 Plotly 或 Matplotlib 图表，管理云端导出，或进行可恢复的本地下载。
+  output_capture_alt: Earth Engine Studio 展示带导出控件的交互式 Plotly 时间序列图
   figure: 图表
 workflow:
   kicker: 02 / 连贯的工作流程

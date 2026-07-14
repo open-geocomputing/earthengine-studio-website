@@ -7,4 +7,5 @@ vendor/
 .DS_Store
 output/
 docs/screenshots/*.tmp.*
+assets/images/product/*.tmp.*
 *.bak
