@@ -55,6 +55,11 @@ are not changed by the site build.
 - `404.html` — custom not-found page
 - `_config.yml` — Jekyll and canonical-domain configuration
 
+See [the screenshot and visual replacement guide](SCREENSHOTS.md) for the
+current desktop/mobile references, sanitized live Studio captures, production
+image inventory, remaining product capture list, dimensions, privacy rules, and
+replacement checklist.
+
 ## Product relationship
 
 Earth Engine Studio is an independent project built on top of Google Earth

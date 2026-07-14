@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Added a screenshot and visual replacement guide with current desktop, mobile,
+  and social-card references; sanitized live Studio references for Sentinel-2,
+  3D terrain, and Plotly output; an inventory of code-built interface visuals;
+  reserved production targets; and capture, privacy, sizing, optimization, and
+  acceptance checklists.
 - Built a complete responsive Jekyll landing page for Earth Engine Studio with
   an orbital visual system, an interactive editor/map demonstration, capability
   and workflow sections, accessible navigation, reduced-motion support, and a

@@ -18,6 +18,8 @@ exclude:
   - Gemfile.lock
   - README.md
   - CHANGES.md
+  - SCREENSHOTS.md
+  - docs
   - vendor
   - output
 
