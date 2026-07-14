@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta name="color-scheme" content="dark">
+    {% seo %}
+    <meta property="og:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ '/assets/images/social-card.png' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/images/orbit-studio.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="preload" href="{{ '/assets/css/main.css' | relative_url }}" as="style">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {{ content }}
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Earth Engine Studio orbit</title>
+  <desc id="desc">A luminous gridded planet crossed by a precise orbital path.</desc>
+  <defs>
+    <linearGradient id="orbit" x1="94" y1="366" x2="419" y2="147" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B8CFF"/>
+      <stop offset=".52" stop-color="#6EE7F2"/>
+      <stop offset="1" stop-color="#72F1B8"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="translate(215 191) rotate(48) scale(255)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172A46"/>
+      <stop offset="1" stop-color="#08101D"/>
+    </radialGradient>
+    <clipPath id="globe"><circle cx="256" cy="256" r="118"/></clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="198" fill="url(#core)"/>
+  <circle cx="256" cy="256" r="197" fill="none" stroke="#233B5D" stroke-width="2"/>
+  <g clip-path="url(#globe)" fill="none" stroke="#BDF8FF" stroke-linecap="round">
+    <circle cx="256" cy="256" r="113" stroke="url(#orbit)" stroke-width="12"/>
+    <ellipse cx="256" cy="256" rx="58" ry="113" stroke-width="9" opacity=".82"/>
+    <path d="M143 256h226M157 202c61 29 137 29 198 0M157 310c61-29 137-29 198 0" stroke-width="9" opacity=".82"/>
+  </g>
+  <path d="M93 346c69 45 195 32 281-32 53-39 73-86 50-116-23-31-86-33-154-8" fill="none" stroke="#08101D" stroke-width="32" stroke-linecap="round"/>
+  <path d="M93 346c69 45 195 32 281-32 53-39 73-86 50-116-23-31-86-33-154-8" fill="none" stroke="url(#orbit)" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="405" cy="180" r="15" fill="#FFD166" stroke="#08101D" stroke-width="9"/>
+  <circle cx="405" cy="180" r="4" fill="#FFF8DF"/>
+</svg>
