@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Replaced the stacked uppercase brand text with a clean lowercase
+  `earthengine.studio` wordmark, using the logo-derived green, blue, and lime
+  palette plus a lighter Studio weight in the header and footer.
+
 - Replaced the Orbit Studio placeholder with the supplied Earth Engine Studio
   animation in established logo positions, retained a reduced-motion/static
   fallback, and added tightly cropped SVG, 32 px, and Apple touch favicons. The

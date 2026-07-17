@@ -99,7 +99,9 @@ start only as they enter the viewport. The static SVG remains the fallback for
 reduced-motion preferences and the footer. Browser and home-screen favicons use
 a tighter globe crop so the mark stays recognizable at small sizes. The same
 source animation is duplicated in the code editor repository, where frames
-22–153 form the script-execution waiting loop.
+22–153 form the script-execution waiting loop. Public header and footer marks
+use a clean lowercase `earthengine.studio` wordmark with green Earth, blue
+Engine, and a lighter Studio weight; the editor uses its monospace code variant.
 
 ## Product relationship
 
