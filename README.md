@@ -102,6 +102,9 @@ source animation is duplicated in the code editor repository, where frames
 22–153 form the script-execution waiting loop. Public header and footer marks
 use a clean lowercase `earthengine.studio` wordmark with green Earth, blue
 Engine, and a lighter Studio weight; the editor uses its monospace code variant.
+The landing page carries the same palette through its hero gradients, primary
+actions, workflow markers, orbital details, foundation diagram, focus states,
+and social sharing card while retaining the established dark geospatial layout.
 
 ## Product relationship
 

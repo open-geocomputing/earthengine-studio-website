@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Refreshed the landing page around the supplied logo palette, bringing Earth
+  green, Engine blue, and lime into the hero, calls to action, workflow,
+  geospatial diagrams, accessible focus states, 404 page, and social sharing
+  card without changing the page structure or translated content.
+
 - Replaced the stacked uppercase brand text with a clean lowercase
   `earthengine.studio` wordmark, using the logo-derived green, blue, and lime
   palette plus a lighter Studio weight in the header and footer.
