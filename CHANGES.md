@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Highlighted Earth Engine Studio as a free code editor in the landing-page
+  hero and closing call to action across all six supported languages, while
+  keeping the claim scoped to Studio rather than Google Earth Engine services.
+
 - Refreshed the landing page around the supplied logo palette, bringing Earth
   green, Engine blue, and lime into the hero, calls to action, workflow,
   geospatial diagrams, accessible focus states, 404 page, and social sharing

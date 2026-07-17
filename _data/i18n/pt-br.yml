@@ -14,6 +14,7 @@ hero:
   lede: Um ambiente de programação moderno construído sobre o Google Earth Engine, reunindo JavaScript e Python no navegador com NumPy, Matplotlib, Plotly, mapas, recursos, repositórios e exportações em um único Studio.
   enter: Entrar no Studio
   explore: Explorar o espaço de trabalho
+  free_editor: Editor de código gratuito
   runs: Funciona no seu navegador
   languages: JavaScript + Python
   editor_notice: A interface em português do editor de código estará disponível em breve.
@@ -104,7 +105,7 @@ cta:
   title_one: O que você vai construir
   title_two: sobre ele?
   open: Abrir o Earth Engine Studio
-  note: Sem instalação. Abra o Studio no seu navegador.
+  note: O Earth Engine Studio é gratuito. Sem instalação, abra o editor de código no seu navegador.
 footer:
   tagline: Um espaço de trabalho moderno para tarefas geoespaciais em escala planetária.
   navigation: Navegação do rodapé

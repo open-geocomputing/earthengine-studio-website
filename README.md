@@ -6,6 +6,11 @@ deployed to GitHub Pages. The main call to action opens the application at
 links to the public documentation at
 [docs.earthengine.studio](https://docs.earthengine.studio/).
 
+The hero identifies Earth Engine Studio as a free code editor, and the closing
+call to action repeats that the browser-based Studio requires no installation.
+This product message describes Earth Engine Studio itself; access to Google
+Earth Engine remains governed separately by Google.
+
 ## Local development
 
 Requirements:

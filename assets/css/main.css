@@ -103,8 +103,8 @@ img { display: block; max-width: 100%; }
 .text-link { display: inline-flex; gap: 12px; align-items: center; color: #c9d6dc; font-size: 14px; font-weight: 640; text-decoration: none; }
 .text-link span { color: var(--cyan); transition: transform 160ms ease; }
 .text-link:hover span { transform: translateY(3px); }
-.hero-note { display: flex; align-items: center; gap: 9px; margin-top: 36px; color: #718690; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
-.status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px rgba(164, 214, 55, 0.72); }
+.hero-note { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 31px; color: #718690; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
+.free-editor-pill { margin-right: 4px; padding: 5px 9px; color: #e9ffd0; background: rgba(89, 184, 77, 0.13); border: 1px solid rgba(164, 214, 55, 0.55); border-radius: 999px; box-shadow: 0 0 20px rgba(89, 184, 77, 0.1); font-weight: 800; letter-spacing: 0.07em; }
 .note-divider { width: 1px; height: 10px; margin-inline: 5px; background: rgba(255, 255, 255, 0.2); }
 .locale-notice { max-width: 560px; display: flex; gap: 8px; align-items: center; margin: 14px 0 0; color: #6f8792; font-size: 11px; line-height: 1.45; }
 .locale-notice span { color: var(--amber); }
