@@ -55,6 +55,8 @@ are not changed by the site build.
 - `_data/i18n/` — complete landing-page copy for all six languages
 - `_layouts/default.html` — metadata and shared document shell
 - `assets/images/product/` — optimized, sanitized captures of the real Studio interface
+- `assets/images/brand/` — the shared animated Lottie and cropped static logo
+- `assets/js/vendor/lottie.min.js` — local Lottie renderer used without a CDN dependency
 - `assets/` — site styles, interaction code, brand assets, and social preview
 - `404.html` — custom not-found page
 - `_config.yml` — Jekyll and canonical-domain configuration
@@ -89,6 +91,15 @@ replacement checklist.
 The published product visuals are exported from real sessions on the Studio
 development editor. Interface-shaped mockups must not be substituted for these
 captures; decorative diagrams and code samples should remain visibly abstract.
+
+## Product identity
+
+Established logo positions use the supplied Earth Engine Studio animation and
+start only as they enter the viewport. The static SVG remains the fallback for
+reduced-motion preferences and the footer. Browser and home-screen favicons use
+a tighter globe crop so the mark stays recognizable at small sizes. The same
+source animation is duplicated in the code editor repository, where frames
+22–153 form the script-execution waiting loop.
 
 ## Product relationship
 

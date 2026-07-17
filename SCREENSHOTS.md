@@ -19,7 +19,9 @@ CSS.
 | `assets/images/product/hero-workspace.webp` | Real editor, Console, scripts, and map hero | Yes | `1600 × 940` WebP | Sentinel workflow or Studio layout changes |
 | `assets/images/product/map-workspace.webp` | Real JavaScript, Console, and 3D terrain card | Yes | `1600 × 940` WebP | Studio 3D view or terrain controls change |
 | `assets/images/product/output-workflow.webp` | Real Plotly output card | Yes | `1600 × 940` WebP | Figure tabs, controls, or export workflow changes |
-| `assets/images/orbit-studio.svg` | Logo and favicon | Yes | Vector SVG | Brand mark changes; this is not a screenshot |
+| `assets/images/brand/earthengine-studio-logo.svg` | Static logo and motion fallback | Yes | Cropped vector SVG | Brand mark changes; this is not a screenshot |
+| `assets/images/brand/earthengine-studio-logo.json` | Animated logo | Yes | Lottie JSON, 512 × 512 source | Logo motion or timing changes; this is not a screenshot |
+| `assets/images/favicon.svg` | Small-format globe favicon | Yes | Cropped vector SVG | Brand mark changes; this is not a screenshot |
 
 All files under `docs/screenshots/` are documentation references only. Jekyll
 does not publish them because the `docs` directory is excluded in `_config.yml`.

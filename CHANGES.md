@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Replaced the Orbit Studio placeholder with the supplied Earth Engine Studio
+  animation in established logo positions, retained a reduced-motion/static
+  fallback, and added tightly cropped SVG, 32 px, and Apple touch favicons. The
+  animation data and player are served locally and start only when visible.
+
 - Replaced the invented hero editor/map interface and illustrative map/output
   panels with optimized, sanitized captures from the real Studio development
   editor; the remaining Python visual is explicitly presented as a code sample.

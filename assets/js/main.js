@@ -3,6 +3,42 @@
   const menuButton = document.querySelector("[data-menu-button]");
   const menu = document.querySelector("[data-menu]");
 
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const initializeLogo = (element) => {
+    if (reducedMotion || element.dataset.logoReady === "true" || !window.lottie) return;
+    const container = element.querySelector(".studio-logo-animation");
+    const path = element.dataset.animationPath;
+    if (!container || !path) return;
+
+    element.dataset.logoReady = "true";
+    const animation = window.lottie.loadAnimation({
+      autoplay: false,
+      container,
+      loop: false,
+      path,
+      renderer: "svg",
+      rendererSettings: { preserveAspectRatio: "xMidYMid slice" },
+    });
+    animation.addEventListener("DOMLoaded", () => {
+      element.classList.add("studio-logo-ready");
+      animation.playSegments([0, 177], true);
+    });
+  };
+
+  const logoElements = [...document.querySelectorAll("[data-studio-logo]")];
+  if (!reducedMotion && "IntersectionObserver" in window) {
+    const logoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        initializeLogo(entry.target);
+        logoObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "80px" });
+    logoElements.forEach((element) => logoObserver.observe(element));
+  } else {
+    logoElements.forEach(initializeLogo);
+  }
+
   const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 18);
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });

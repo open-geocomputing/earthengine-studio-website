@@ -5,7 +5,10 @@ layout: default
 <header class="site-header" data-header>
   <div class="shell nav-wrap">
     <a class="brand" href="#top" aria-label="{{ t.nav.home }}">
-      <img src="{{ '/assets/images/orbit-studio.svg' | relative_url }}" width="42" height="42" alt="">
+      <span class="studio-logo brand-logo" data-studio-logo data-animation-path="{{ '/assets/images/brand/earthengine-studio-logo.json' | relative_url }}">
+        <img src="{{ '/assets/images/brand/earthengine-studio-logo.svg' | relative_url }}" width="58" height="42" alt="">
+        <span class="studio-logo-animation" aria-hidden="true"></span>
+      </span>
       <span>Earth Engine<br><strong>Studio</strong></span>
     </a>
 
@@ -152,7 +155,10 @@ Map.<i>addLayer</i>(image)</code></pre></div>
   <section class="cta-section">
     <div class="cta-grid" aria-hidden="true"></div>
     <div class="shell cta-inner reveal">
-      <img src="{{ '/assets/images/orbit-studio.svg' | relative_url }}" width="110" height="110" alt="">
+      <span class="studio-logo cta-logo" data-studio-logo data-animation-path="{{ '/assets/images/brand/earthengine-studio-logo.json' | relative_url }}">
+        <img src="{{ '/assets/images/brand/earthengine-studio-logo.svg' | relative_url }}" width="152" height="110" alt="">
+        <span class="studio-logo-animation" aria-hidden="true"></span>
+      </span>
       <span class="section-kicker">{{ t.cta.kicker }}</span>
       <h2>{{ t.cta.title_one }}<br><em>{{ t.cta.title_two }}</em></h2>
       <a class="button button-primary button-large" href="https://code.earthengine.studio/">{{ t.cta.open }} <span aria-hidden="true">→</span></a>
@@ -163,7 +169,7 @@ Map.<i>addLayer</i>(image)</code></pre></div>
 
 <footer class="site-footer">
   <div class="shell footer-main">
-    <a class="brand footer-brand" href="#top"><img src="{{ '/assets/images/orbit-studio.svg' | relative_url }}" width="46" height="46" alt=""><span>Earth Engine<br><strong>Studio</strong></span></a>
+    <a class="brand footer-brand" href="#top"><img class="footer-logo" src="{{ '/assets/images/brand/earthengine-studio-logo.svg' | relative_url }}" width="64" height="46" alt=""><span>Earth Engine<br><strong>Studio</strong></span></a>
     <p>{{ t.footer.tagline }}</p>
     <nav aria-label="{{ t.footer.navigation }}"><a href="#capabilities">{{ t.nav.capabilities }}</a><a href="#workflow">{{ t.nav.workflow }}</a><a href="https://docs.earthengine.studio/">{{ t.nav.documentation }} ↗</a><a href="https://code.earthengine.studio/">{{ t.nav.open }} ↗</a></nav>
   </div>
