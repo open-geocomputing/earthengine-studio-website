@@ -14,5 +14,6 @@ brand-refresh-preview*.png
 free-editor-highlight-preview*.png
 docs/screenshots/*.tmp.*
 assets/images/product/*.tmp.*
+assets/images/product/*.source.*
 assets/images/brand/*.tmp.*
 *.bak

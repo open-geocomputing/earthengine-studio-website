@@ -18,8 +18,10 @@ hero:
   runs: Runs in your browser
   languages: JavaScript + Python
   editor_notice: Localized code-editor interfaces will be available soon.
-  capture_label: Real Studio capture
-  capture_alt: Earth Engine Studio running a Sentinel-2 JavaScript workflow with code, Console results, scripts, and a map
+  capture_label: Live wind-field demo
+  capture_alt: Open Earth Engine Studio, shown rendering animated ERA5 wind particles around a global satellite map alongside JavaScript code and Console output
+  play_demo: Play product demo
+  pause_demo: Pause product demo
   panels: Studio panels
   files: Files
   search: Search

@@ -57,10 +57,18 @@ layout: default
       <div class="product-stage product-capture reveal">
         <div class="orbit orbit-a" aria-hidden="true"></div>
         <div class="orbit orbit-b" aria-hidden="true"></div>
-        <a class="product-window product-window-real" href="https://code.earthengine.studio/">
-          <img src="{{ '/assets/images/product/hero-workspace.webp' | relative_url }}" width="1600" height="940" alt="{{ t.hero.capture_alt }}">
-          <span class="capture-label"><i></i>{{ t.hero.capture_label }} <b aria-hidden="true">↗</b></span>
-        </a>
+        <div class="product-window product-window-real product-window-demo" data-product-demo>
+          <video class="product-demo-video" muted loop playsinline preload="metadata" poster="{{ '/assets/images/product/wind-field-demo-poster.webp' | relative_url }}" data-product-demo-video aria-hidden="true" tabindex="-1">
+            <source src="{{ '/assets/images/product/wind-field-demo.mp4' | relative_url }}" type="video/mp4">
+          </video>
+          <a class="product-demo-link" href="https://code.earthengine.studio/" aria-label="{{ t.hero.capture_alt }}">
+            <span class="capture-label"><i></i>{{ t.hero.capture_label }} <b aria-hidden="true">↗</b></span>
+          </a>
+          <button class="product-demo-toggle" type="button" aria-label="{{ t.hero.play_demo }}" aria-pressed="false" data-product-demo-toggle data-play-label="{{ t.hero.play_demo }}" data-pause-label="{{ t.hero.pause_demo }}">
+            <span class="product-demo-toggle-icon" aria-hidden="true"></span>
+            <span data-product-demo-toggle-label>{{ t.hero.play_demo }}</span>
+          </button>
+        </div>
       </div>
     </div>
 

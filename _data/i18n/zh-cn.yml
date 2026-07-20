@@ -18,8 +18,10 @@ hero:
   runs: 在浏览器中运行
   languages: JavaScript + Python
   editor_notice: 代码编辑器的简体中文界面即将推出。
-  capture_label: Studio 实际界面
-  capture_alt: Earth Engine Studio 正在运行 Sentinel-2 JavaScript 工作流程，画面包含代码、控制台结果、脚本和地图
+  capture_label: 实时风场演示
+  capture_alt: 打开 Earth Engine Studio；画面展示全球卫星地图上的 ERA5 动态风粒子，以及 JavaScript 代码和控制台输出
+  play_demo: 播放产品演示
+  pause_demo: 暂停产品演示
   panels: Studio 面板
   files: 文件
   search: 搜索

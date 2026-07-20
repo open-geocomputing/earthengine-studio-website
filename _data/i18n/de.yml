@@ -18,8 +18,10 @@ hero:
   runs: Läuft in Ihrem Browser
   languages: JavaScript + Python
   editor_notice: Die deutsche Oberfläche des Code-Editors wird bald verfügbar sein.
-  capture_label: Echte Studio-Aufnahme
-  capture_alt: Earth Engine Studio mit einem Sentinel-2-JavaScript-Workflow, Code, Konsolenergebnissen, Skripten und Karte
+  capture_label: Live-Demo des Windfelds
+  capture_alt: Earth Engine Studio öffnen – gezeigt mit animierten ERA5-Windpartikeln auf einer globalen Satellitenkarte neben JavaScript-Code und Konsolenausgabe
+  play_demo: Produktdemo abspielen
+  pause_demo: Produktdemo pausieren
   panels: Studio-Bereiche
   files: Dateien
   search: Suchen

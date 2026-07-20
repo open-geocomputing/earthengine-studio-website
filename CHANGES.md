@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+- Replaced the static hero workspace with a privacy-cropped, optimized recording
+  of Studio rendering animated ERA5 wind particles on a global satellite map.
+  The silent 24 fps demo pauses off-screen, provides a localized play/pause
+  control, and falls back to a matching poster for reduced-motion visitors.
+
 - Highlighted Earth Engine Studio as a free code editor in the landing-page
   hero and closing call to action across all six supported languages, while
   keeping the claim scoped to Studio rather than Google Earth Engine services.

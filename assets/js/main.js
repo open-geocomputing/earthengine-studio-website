@@ -4,6 +4,53 @@
   const menu = document.querySelector("[data-menu]");
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const productDemo = document.querySelector("[data-product-demo]");
+  const productDemoVideo = productDemo?.querySelector("[data-product-demo-video]");
+  const productDemoToggle = productDemo?.querySelector("[data-product-demo-toggle]");
+  const productDemoToggleLabel = productDemoToggle?.querySelector("[data-product-demo-toggle-label]");
+
+  if (productDemoVideo && productDemoToggle) {
+    let shouldPlay = !reducedMotion;
+    let isVisible = true;
+
+    const updateDemoToggle = () => {
+      const isPlaying = !productDemoVideo.paused && !productDemoVideo.ended;
+      const label = isPlaying ? productDemoToggle.dataset.pauseLabel : productDemoToggle.dataset.playLabel;
+      productDemoToggle.setAttribute("aria-pressed", String(isPlaying));
+      if (label) {
+        productDemoToggle.setAttribute("aria-label", label);
+        if (productDemoToggleLabel) productDemoToggleLabel.textContent = label;
+      }
+    };
+
+    const syncDemoPlayback = () => {
+      if (!shouldPlay || !isVisible || document.hidden) {
+        productDemoVideo.pause();
+        return;
+      }
+      productDemoVideo.play().catch(updateDemoToggle);
+    };
+
+    productDemoToggle.addEventListener("click", () => {
+      shouldPlay = productDemoVideo.paused;
+      syncDemoPlayback();
+    });
+    productDemoVideo.addEventListener("play", updateDemoToggle);
+    productDemoVideo.addEventListener("pause", updateDemoToggle);
+    document.addEventListener("visibilitychange", syncDemoPlayback);
+
+    if ("IntersectionObserver" in window) {
+      const demoObserver = new IntersectionObserver((entries) => {
+        isVisible = entries[0]?.isIntersecting ?? true;
+        syncDemoPlayback();
+      }, { threshold: 0.25 });
+      demoObserver.observe(productDemo);
+    } else {
+      syncDemoPlayback();
+    }
+    updateDemoToggle();
+  }
+
   const initializeLogo = (element) => {
     if (reducedMotion || element.dataset.logoReady === "true" || !window.lottie) return;
     const container = element.querySelector(".studio-logo-animation");

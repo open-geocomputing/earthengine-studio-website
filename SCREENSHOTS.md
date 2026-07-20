@@ -16,7 +16,9 @@ CSS.
 | `docs/screenshots/product-sentinel-workspace.png` | Real editor, Console, and 2D map reference | No | `1600 × 940` PNG | Studio layout or map workflow changes |
 | `docs/screenshots/product-innsbruck-terrain.png` | Real editor, Console, and 3D map reference | No | `1600 × 940` PNG | Studio 3D view or terrain controls change |
 | `docs/screenshots/product-plotly-output.png` | Real maximized Plotly output reference | No | `1600 × 940` PNG | Figure tabs, controls, or export workflow changes |
-| `assets/images/product/hero-workspace.webp` | Real editor, Console, scripts, and map hero | Yes | `1600 × 940` WebP | Sentinel workflow or Studio layout changes |
+| `assets/images/product/wind-field-demo.mp4` | Real animated wind-field hero demo | Yes | `1600 × 876`, H.264 MP4, 24 fps | Wind-field example, Studio layout, or hero motion changes |
+| `assets/images/product/wind-field-demo-poster.webp` | Static and reduced-motion fallback for the hero demo | Yes | `1600 × 876` WebP | Hero video crop or representative frame changes |
+| `assets/images/product/hero-workspace.webp` | Previous static editor, Console, scripts, and map hero | Retained | `1600 × 940` WebP | Remove after the animated hero has been proven in production |
 | `assets/images/product/map-workspace.webp` | Real JavaScript, Console, and 3D terrain card | Yes | `1600 × 940` WebP | Studio 3D view or terrain controls change |
 | `assets/images/product/output-workflow.webp` | Real Plotly output card | Yes | `1600 × 940` WebP | Figure tabs, controls, or export workflow changes |
 | `assets/images/brand/earthengine-studio-logo.svg` | Static logo and motion fallback | Yes | Cropped vector SVG | Brand mark changes; this is not a screenshot |
@@ -72,6 +74,15 @@ a clean reference for the charts and figures section.
 These PNGs are the lossless source references. Their optimized WebP exports in
 `assets/images/product/` are the production images used by the landing page.
 
+### Animated global wind field
+
+The hero recording shows the public **Animated wind field** example with ERA5
+particles flowing around a satellite globe, visible JavaScript parameters, and
+successful Console output. The production crop removes the browser tabs,
+bookmarks, extensions, account photo, and all surrounding desktop pixels. The
+13.125-second source was downsampled from 120 fps to a silent 24 fps H.264 MP4;
+the representative frame at six seconds supplies the matching WebP poster.
+
 ## Visual implementation inventory
 
 Product-interface imagery must come from real Studio captures. Code and CSS may
@@ -80,16 +91,18 @@ imitate a product screenshot.
 
 | Surface | Current implementation | Source or next target | Status |
 | --- | --- | --- | --- |
-| Hero editor, map, and Console | Real WebP screenshot | `product-sentinel-workspace.png` | Published |
+| Hero editor, map, and Console | Real MP4 recording with WebP poster | `wind-field-demo.mp4` | Published with accessible playback control |
 | JavaScript and Python card | Semantic Python code sample | Optional real Python workflow capture | Truthful sample; not presented as UI |
 | Map renderer card | Real WebP screenshot | `product-innsbruck-terrain.png` | Published |
 | GitHub and GitLab repository card | Abstract branch diagram | `assets/images/product/repository-workflow.webp` | Real sanitized repository capture still needed |
 | Console, figure, and task card | Real WebP screenshot | `product-plotly-output.png` | Published |
 | Earth Engine foundation graphic | `.foundation-visual` | Keep code-based unless the brand direction changes | No capture needed |
 
-When a screenshot is refreshed, keep the surrounding card copy and responsive
-container, provide meaningful localized alternative text, and update both the
-lossless source PNG and optimized production WebP in the same commit.
+When a screenshot or recording is refreshed, keep the surrounding card copy
+and responsive container, provide meaningful localized alternative text, and
+update both the review source and optimized production export in the same
+commit. Video replacements must remain silent, include a matching poster, and
+preserve the reduced-motion and play/pause behavior.
 
 ## Product screenshot capture checklist
 
@@ -151,6 +164,8 @@ and save messages contain no personal or private information.
   small preview sizes.
 - Product screenshots are sharp at their rendered size and stay below 500 KiB
   each where practical.
+- Hero video stays below 3 MiB, contains no audio, and has a representative
+  poster; autoplay remains visibility-aware and disabled for reduced motion.
 - All screenshot crops remain legible at desktop, tablet, and mobile breakpoints.
 - No secret, credential, personal identifier, or private repository content is
   present.
