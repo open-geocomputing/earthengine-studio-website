@@ -54,11 +54,29 @@ workflow, the Pages custom-domain setting is authoritative; the checked-in
 Pages by itself. DNS and GitHub repository settings are external operations and
 are not changed by the site build.
 
+## Search engines and agents
+
+- Each landing page sets `title`, `description`, `lang`, and `locale` in its
+  front matter; `jekyll-seo-tag` adds the canonical URL and social tags, using
+  `assets/images/social-card.jpg` from the `_config.yml` defaults.
+- `_includes/structured-data.html` adds `SoftwareApplication` and
+  `Organization` JSON-LD to the landing pages.
+- `jekyll-sitemap` writes `sitemap.xml`; `robots.txt` lists it together with
+  the documentation sitemap.
+- `llms.txt` points language-model agents to the documentation's `llms.txt`,
+  `llms-full.txt`, reference, and examples.
+- Capability cards and workflow steps link to the matching localized guide on
+  docs.earthengine.studio.
+
+See [AGENTS.md](AGENTS.md) for the rules agents follow when editing the site.
+
 ## Structure
 
 - `_layouts/landing.html` — shared translated landing page and product demonstration
 - `_data/i18n/` — complete landing-page copy for all six languages
 - `_layouts/default.html` — metadata and shared document shell
+- `_includes/structured-data.html` — landing-page JSON-LD
+- `robots.txt`, `llms.txt` — crawler and agent entry points
 - `assets/images/product/` — optimized, sanitized images, video, and poster frames from the real Studio interface
 - `assets/images/brand/` — the shared animated Lottie and cropped static logo
 - `assets/js/vendor/lottie.min.js` — local Lottie renderer used without a CDN dependency
@@ -104,7 +122,8 @@ control, and stays still by default when the visitor prefers reduced motion.
 
 Established logo positions use the supplied Earth Engine Studio animation and
 start only as they enter the viewport. The static SVG remains the fallback for
-reduced-motion preferences and the footer. Browser and home-screen favicons use
+reduced-motion preferences and the footer; `assets/js/main.js` fetches the
+Lottie renderer only after the page has loaded. Browser and home-screen favicons use
 a tighter globe crop so the mark stays recognizable at small sizes. The same
 source animation is duplicated in the code editor repository, where frames
 22–153 form the script-execution waiting loop. Public header and footer marks

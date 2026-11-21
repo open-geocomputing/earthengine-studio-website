@@ -1,0 +1,44 @@
+{%- assign current_language = site.data.languages | where: "code", page.lang | first -%}
+{%- assign docs_url = "https://docs.earthengine.studio" | append: current_language.path -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "{{ '/' | absolute_url }}#software",
+      "name": "Earth Engine Studio",
+      "alternateName": "earthengine.studio",
+      "url": "https://code.earthengine.studio/",
+      "description": {{ page.description | jsonify }},
+      "inLanguage": {{ page.lang | default: site.lang | jsonify }},
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "Geospatial analysis",
+      "operatingSystem": "Web browser",
+      "browserRequirements": "A current browser with JavaScript enabled. Running Earth Engine requests requires a Google account and an Earth Engine-enabled Google Cloud project.",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "featureList": [
+        "JavaScript and browser-side Python (NumPy, Matplotlib, Plotly) for Google Earth Engine",
+        "MapLibre maps in 2D, 3D terrain, and globe view",
+        "GitHub and GitLab repositories",
+        "Earth Engine assets, tasks, cloud exports, and local downloads",
+        "Earth Engine ui Apps with portable and managed public publishing",
+        "Optional AI assistant with per-function approval policies"
+      ],
+      "image": {{ '/assets/images/social-card.jpg' | absolute_url | jsonify }},
+      "screenshot": {{ '/assets/images/product/hero-workspace.webp' | absolute_url | jsonify }},
+      "softwareHelp": { "@type": "CreativeWork", "url": {{ docs_url | jsonify }} },
+      "publisher": { "@id": "{{ '/' | absolute_url }}#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ '/' | absolute_url }}#organization",
+      "name": "Open Geocomputing",
+      "url": "https://www.open-geocomputing.org/",
+      "logo": {{ '/assets/images/apple-touch-icon.png' | absolute_url | jsonify }},
+      "sameAs": ["https://github.com/open-geocomputing"]
+    }
+  ]
+}
+</script>

@@ -51,8 +51,35 @@
     updateDemoToggle();
   }
 
+  // The Lottie renderer is only fetched once a logo is visible and the page has
+  // finished loading, so it never competes with the first render.
+  const lottieSource = document.currentScript?.dataset.lottieSrc;
+  let lottieLoading = null;
+  const loadLottie = () => {
+    if (window.lottie) return Promise.resolve(window.lottie);
+    if (!lottieSource) return Promise.reject(new Error("No Lottie source"));
+    lottieLoading ??= new Promise((resolve, reject) => {
+      const start = () => {
+        const script = document.createElement("script");
+        script.src = lottieSource;
+        script.async = true;
+        script.onload = () => (window.lottie ? resolve(window.lottie) : reject(new Error("Lottie unavailable")));
+        script.onerror = () => reject(new Error("Lottie failed to load"));
+        document.head.append(script);
+      };
+      const idle = () => ("requestIdleCallback" in window ? window.requestIdleCallback(start, { timeout: 2000 }) : window.setTimeout(start, 200));
+      if (document.readyState === "complete") idle();
+      else window.addEventListener("load", idle, { once: true });
+    });
+    return lottieLoading;
+  };
+
   const initializeLogo = (element) => {
-    if (reducedMotion || element.dataset.logoReady === "true" || !window.lottie) return;
+    if (reducedMotion || element.dataset.logoReady === "true") return;
+    if (!window.lottie) {
+      loadLottie().then(() => initializeLogo(element)).catch(() => { /* The static logo remains visible. */ });
+      return;
+    }
     const container = element.querySelector(".studio-logo-animation");
     const path = element.dataset.animationPath;
     if (!container || !path) return;

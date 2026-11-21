@@ -1,0 +1,10 @@
+---
+layout: null
+sitemap: false
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Sitemap: https://docs.earthengine.studio/sitemap.xml

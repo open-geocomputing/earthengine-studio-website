@@ -1,0 +1,26 @@
+---
+layout: null
+sitemap: false
+permalink: /llms.txt
+---
+# Earth Engine Studio
+
+> Earth Engine Studio is a free, browser-based code editor for Google Earth Engine. It runs JavaScript and browser-side Python (NumPy, Matplotlib, Plotly) against Earth Engine, renders results on MapLibre maps in 2D, 3D terrain, or globe view, and connects GitHub/GitLab repositories, Earth Engine assets, tasks, exports, local downloads, `ui` Apps, and an optional AI assistant. It is an independent project, not an official Google product; Earth Engine access requires a Google account and an Earth Engine-enabled Google Cloud project.
+
+## Product
+
+- [Open the Studio](https://code.earthengine.studio/): the application itself (no installation).
+- [Landing page]({{ '/' | absolute_url }}): product overview, also in French, German, Spanish, Brazilian Portuguese, and Simplified Chinese.
+
+## Documentation
+
+- [Documentation index for agents](https://docs.earthengine.studio/llms.txt): every guide, with links to plain Markdown copies.
+- [Full documentation in one file](https://docs.earthengine.studio/llms-full.txt): all English guides concatenated.
+- [Studio API reference](https://docs.earthengine.studio/studio-reference/): what Studio adds to or changes from Google's Code Editor script environment.
+- [AI assistant](https://docs.earthengine.studio/ai-assistant/): providers, approval policies, and the Studio function reference.
+- [Examples](https://docs.earthengine.studio/examples/): runnable example scripts with "Open in Studio" links.
+
+## Optional
+
+- [Earth Engine API reference (Google)](https://developers.google.com/earth-engine/apidocs): authoritative `ee` API documentation.
+- [Example scripts source](https://github.com/open-geocomputing/earthengine-studio-examples): the example catalog repository.

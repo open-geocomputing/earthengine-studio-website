@@ -2,6 +2,8 @@
 layout: default
 ---
 {% assign t = site.data.i18n[page.translation_key] %}
+{% assign current_language = site.data.languages | where: "code", page.lang | first %}
+{% assign docs_base = "https://docs.earthengine.studio" | append: current_language.path %}
 <header class="site-header" data-header>
   <div class="shell nav-wrap">
     <a class="brand" href="#top" aria-label="{{ t.nav.home }}">
@@ -21,7 +23,7 @@ layout: default
       <a href="#capabilities">{{ t.nav.capabilities }}</a>
       <a href="#workflow">{{ t.nav.workflow }}</a>
       <a href="#about">{{ t.nav.about }}</a>
-      <a href="https://docs.earthengine.studio/">{{ t.nav.documentation }} <span aria-hidden="true">↗</span></a>
+      <a href="{{ docs_base }}">{{ t.nav.documentation }} <span aria-hidden="true">↗</span></a>
       {% include language-switcher.html %}
       <a class="nav-cta" href="https://code.earthengine.studio/">{{ t.nav.open }} <span aria-hidden="true">↗</span></a>
     </nav>
@@ -36,8 +38,7 @@ layout: default
 
     <div class="shell hero-layout">
       <div class="hero-copy">
-        <div class="eyebrow reveal"><i></i> {{ t.hero.eyebrow }}</div>
-        <h1 class="reveal">{{ t.hero.title_one }}<br><span>{{ t.hero.title_two }}</span></h1>
+        <h1 class="reveal"><span class="eyebrow hero-eyebrow"><i></i> {{ t.hero.eyebrow }}</span><span class="hero-title">{{ t.hero.title_one }}<br><span class="hero-title-accent">{{ t.hero.title_two }}</span></span></h1>
         <p class="hero-lede reveal">{{ t.hero.lede }}</p>
         <div class="hero-actions reveal">
           <a class="button button-primary" href="https://code.earthengine.studio/">
@@ -74,7 +75,7 @@ layout: default
 
     <div class="shell proof-strip reveal" aria-label="{{ t.hero.highlights }}">
       <p>{{ t.hero.proof_start }} <strong>{{ t.hero.idea }}</strong> {{ t.hero.and }} <strong>{{ t.hero.insight }}</strong>.</p>
-      <ul><li>{{ t.hero.maps }}</li><li>{{ t.hero.git }}</li><li>{{ t.hero.python_stack }}</li><li>{{ t.hero.persistence }}</li></ul>
+      <ul><li>{{ t.hero.maps }}</li><li>{{ t.hero.git }}</li><li>{{ t.hero.python_stack }}</li><li>{{ t.hero.persistence }}</li><li>{{ t.hero.ai }}</li></ul>
     </div>
   </section>
 
@@ -94,25 +95,25 @@ layout: default
 
 image = ee.<i>Image</i>(<u>"COPERNICUS/S2"</u>)
 Map.<i>addLayer</i>(image)</code></pre></div>
-          <div class="card-copy"><h3>{{ t.capabilities.code_title }}</h3><p>{{ t.capabilities.code_body }}</p></div>
+          <div class="card-copy"><h3>{{ t.capabilities.code_title }}</h3><p>{{ t.capabilities.code_body }}</p><a class="card-guide-link" href="{{ docs_base }}editor/">{{ t.capabilities.guide }} <span aria-hidden="true">↗</span></a></div>
         </article>
 
         <article class="feature-card feature-map reveal">
           <div class="card-number">02</div>
           <div class="feature-shot feature-shot-map"><img src="{{ '/assets/images/product/map-workspace.webp' | relative_url }}" width="1600" height="940" alt="{{ t.capabilities.map_capture_alt }}"></div>
-          <div class="card-copy"><h3>{{ t.capabilities.map_title }}</h3><p>{{ t.capabilities.map_body }}</p></div>
+          <div class="card-copy"><h3>{{ t.capabilities.map_title }}</h3><p>{{ t.capabilities.map_body }}</p><a class="card-guide-link" href="{{ docs_base }}maps-and-geometries/">{{ t.capabilities.guide }} <span aria-hidden="true">↗</span></a></div>
         </article>
 
         <article class="feature-card feature-git reveal">
           <div class="card-number">03</div>
           <div class="branch-visual" aria-hidden="true"><span class="branch-line main-line"></span><span class="branch-line side-line"></span><i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i><div class="file-pill file-one">analysis.py <b>+12</b></div><div class="file-pill file-two">map.js <b>+4</b></div></div>
-          <div class="card-copy"><h3>{{ t.capabilities.git_title }}</h3><p>{{ t.capabilities.git_body }}</p></div>
+          <div class="card-copy"><h3>{{ t.capabilities.git_title }}</h3><p>{{ t.capabilities.git_body }}</p><a class="card-guide-link" href="{{ docs_base }}repositories-and-sharing/">{{ t.capabilities.guide }} <span aria-hidden="true">↗</span></a></div>
         </article>
 
         <article class="feature-card feature-output reveal">
           <div class="card-number">04</div>
           <div class="feature-shot feature-shot-output"><img src="{{ '/assets/images/product/output-workflow.webp' | relative_url }}" width="1600" height="940" alt="{{ t.capabilities.output_capture_alt }}"></div>
-          <div class="card-copy"><h3>{{ t.capabilities.output_title }}</h3><p>{{ t.capabilities.output_body }}</p></div>
+          <div class="card-copy"><h3>{{ t.capabilities.output_title }}</h3><p>{{ t.capabilities.output_body }}</p><a class="card-guide-link" href="{{ docs_base }}console-and-plots/">{{ t.capabilities.guide }} <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
     </div>
@@ -127,10 +128,10 @@ Map.<i>addLayer</i>(image)</code></pre></div>
         <a class="text-link text-link-light" href="https://code.earthengine.studio/">{{ t.workflow.start }} <span aria-hidden="true">↗</span></a>
       </div>
       <ol class="workflow-steps">
-        <li class="reveal"><span>01</span><div><h3>{{ t.workflow.discover_title }}</h3><p>{{ t.workflow.discover_body }}</p></div><b>{{ t.workflow.discover_meta }}</b></li>
-        <li class="reveal"><span>02</span><div><h3>{{ t.workflow.compose_title }}</h3><p>{{ t.workflow.compose_body }}</p></div><b>{{ t.workflow.compose_meta }}</b></li>
-        <li class="reveal"><span>03</span><div><h3>{{ t.workflow.observe_title }}</h3><p>{{ t.workflow.observe_body }}</p></div><b>{{ t.workflow.observe_meta }}</b></li>
-        <li class="reveal"><span>04</span><div><h3>{{ t.workflow.deliver_title }}</h3><p>{{ t.workflow.deliver_body }}</p></div><b>{{ t.workflow.deliver_meta }}</b></li>
+        <li class="reveal"><span>01</span><div><h3><a href="{{ docs_base }}data-and-docs/">{{ t.workflow.discover_title }}</a></h3><p>{{ t.workflow.discover_body }}</p></div><b>{{ t.workflow.discover_meta }}</b></li>
+        <li class="reveal"><span>02</span><div><h3><a href="{{ docs_base }}editor/">{{ t.workflow.compose_title }}</a></h3><p>{{ t.workflow.compose_body }}</p></div><b>{{ t.workflow.compose_meta }}</b></li>
+        <li class="reveal"><span>03</span><div><h3><a href="{{ docs_base }}console-and-plots/">{{ t.workflow.observe_title }}</a></h3><p>{{ t.workflow.observe_body }}</p></div><b>{{ t.workflow.observe_meta }}</b></li>
+        <li class="reveal"><span>04</span><div><h3><a href="{{ docs_base }}tasks-and-exports/">{{ t.workflow.deliver_title }}</a></h3><p>{{ t.workflow.deliver_body }}</p></div><b>{{ t.workflow.deliver_meta }}</b></li>
       </ol>
     </div>
   </section>
@@ -179,7 +180,7 @@ Map.<i>addLayer</i>(image)</code></pre></div>
   <div class="shell footer-main">
     <a class="brand footer-brand" href="#top" aria-label="Earth Engine Studio"><img class="footer-logo" src="{{ '/assets/images/brand/earthengine-studio-logo.svg' | relative_url }}" width="64" height="46" alt=""><span class="brand-wordmark" aria-hidden="true"><span class="wordmark-earth">earth</span><span class="wordmark-engine">engine</span><span class="wordmark-dot">.</span><span class="wordmark-studio">studio</span></span></a>
     <p>{{ t.footer.tagline }}</p>
-    <nav aria-label="{{ t.footer.navigation }}"><a href="#capabilities">{{ t.nav.capabilities }}</a><a href="#workflow">{{ t.nav.workflow }}</a><a href="https://docs.earthengine.studio/">{{ t.nav.documentation }} ↗</a><a href="https://code.earthengine.studio/">{{ t.nav.open }} ↗</a></nav>
+    <nav aria-label="{{ t.footer.navigation }}"><a href="#capabilities">{{ t.nav.capabilities }}</a><a href="#workflow">{{ t.nav.workflow }}</a><a href="{{ docs_base }}">{{ t.nav.documentation }} ↗</a><a href="https://code.earthengine.studio/">{{ t.nav.open }} ↗</a></nav>
   </div>
   <div class="shell footer-legal"><p>{{ t.footer.disclaimer }}</p><p>© <span data-year>2026</span> Earth Engine Studio</p></div>
 </footer>

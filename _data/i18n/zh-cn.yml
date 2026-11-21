@@ -8,7 +8,7 @@ nav:
   documentation: 文档
   open: 打开 Studio
 hero:
-  eyebrow: 开放式地理空间工作区
+  eyebrow: 免费的 Google Earth Engine 代码编辑器
   title_one: 洞察地球。
   title_two: 塑造未来。
   lede: 基于 Google Earth Engine 构建的现代编程环境，将 JavaScript、浏览器端 Python、NumPy、Matplotlib、Plotly、地图、资产、代码仓库和导出功能汇聚在同一个专注的 Studio 中。
@@ -46,19 +46,21 @@ hero:
   idea: 构想
   and: 到
   insight: 洞察
-  maps: 三种地图渲染器
+  maps: 二维、三维与地球仪地图
   git: GitHub + GitLab
   python_stack: NumPy + Matplotlib + Plotly
   persistence: 浏览器本地持久化
+  ai: 可选 AI 助手
 capabilities:
+  guide: 阅读指南
   kicker: 01 / 更出色的工作区
   title_one: Earth Engine，
   title_two: 更充裕的创作空间。
   intro: 我们以 Google Earth Engine 的全球尺度分析能力为基础，扩展其周边工作区——支持更多语言、科学 Python、更多地图选择、更丰富的代码仓库流程，以及始终贴近代码的工具。
   code_title: 浏览器中的科学 Python
   code_body: 在 JavaScript 与浏览器端 Python 之间自由切换，并使用 NumPy、Matplotlib、Plotly、代码补全、悬停帮助、引用查找和熟悉的编辑体验。
-  map_title: 不受限制的地图体验
-  map_body: 为每张地图选择渲染器，绘制和检查几何图形，在标签页中比较视图，同时保持一致的脚本地图 API。
+  map_title: 二维、三维与地球仪视图
+  map_body: 使用 MapLibre 在平面地图、三维地形或地球仪上显示 Earth Engine 图层；绘制和检查几何图形，在标签页中比较视图，并沿用熟悉的脚本 Map API。
   map_capture_alt: Earth Engine Studio 展示 JavaScript、控制台结果和因斯布鲁克三维地形地图
   git_title: 直接操作您的代码仓库
   git_body: 在 Studio 中打开、编辑并保存 GitHub 和 GitLab 仓库文件，使用冲突感知保存机制保护远程更改。
@@ -92,7 +94,7 @@ foundation:
   title_two: 保留核心引擎。
   body: Earth Engine Studio 是一个构建于 Google Earth Engine 之上的独立开放工作区。它以平台分析能力为核心，同时扩展代码编写、导航、可视化和工作组织方式。
   flexible_title: 更灵活
-  flexible_body: 自由选择语言、地图、布局和本地工作流程。
+  flexible_body: 自由选择语言、底图、布局和本地工作流程。
   connected_title: 更互联
   connected_body: 将代码仓库、代码、资产、任务和文档汇聚一处。
   yours_title: 更属于您

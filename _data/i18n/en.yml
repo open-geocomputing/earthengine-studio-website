@@ -8,7 +8,7 @@ nav:
   documentation: Documentation
   open: Open Studio
 hero:
-  eyebrow: Open geospatial workspace
+  eyebrow: Free code editor for Google Earth Engine
   title_one: See the planet.
   title_two: Shape what’s next.
   lede: A modern coding environment built on Google Earth Engine—bringing JavaScript and browser-side Python with NumPy, Matplotlib, Plotly, maps, assets, repositories, and exports into one focused studio.
@@ -46,19 +46,21 @@ hero:
   idea: idea
   and: and
   insight: insight
-  maps: Three map renderers
+  maps: MapLibre 2D, 3D + globe
   git: GitHub + GitLab
   python_stack: NumPy + Matplotlib + Plotly
   persistence: Browser-local persistence
+  ai: Optional AI assistant
 capabilities:
+  guide: Read the guide
   kicker: 01 / A better workspace
   title_one: Earth Engine,
   title_two: with more room to work.
   intro: We build on the planetary-scale analysis of Google Earth Engine and extend the workspace around it—more languages, scientific Python, more map choices, richer repository flows, and tools that stay close to your code.
   code_title: Scientific Python in your browser
   code_body: Move between JavaScript and browser-side Python, then work with NumPy, Matplotlib, Plotly, completion, hover help, references, and familiar editor ergonomics.
-  map_title: Map without lock-in
-  map_body: Choose your renderer per map, draw and inspect geometry, compare views in tabs, and keep the same script-facing map API.
+  map_title: Maps in 2D, 3D, and on the globe
+  map_body: Render Earth Engine layers with MapLibre on flat maps, 3D terrain, or the globe; draw and inspect geometry, compare views in tabs, and keep the familiar script-facing Map API.
   map_capture_alt: Earth Engine Studio showing JavaScript, Console results, and a three-dimensional terrain map of Innsbruck
   git_title: Work directly in your repositories
   git_body: Open, edit, and save files in GitHub and GitLab repositories from the Studio, with conflict-aware saves that protect remote changes.
@@ -92,7 +94,7 @@ foundation:
   title_two: Keep the engine.
   body: Earth Engine Studio is an independent, open workspace built on top of Google Earth Engine. It keeps the platform’s analysis capabilities at the center while expanding how you write, navigate, visualize, and organize the work around them.
   flexible_title: More flexible
-  flexible_body: Choose languages, maps, layouts, and local workflows.
+  flexible_body: Choose languages, basemaps, layouts, and local workflows.
   connected_title: More connected
   connected_body: Bring repositories, code, assets, tasks, and documentation together.
   yours_title: More yours

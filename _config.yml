@@ -1,17 +1,18 @@
 title: Earth Engine Studio
 tagline: A modern workspace for planetary-scale geospatial work
 description: >-
-  A modern, open workspace built on Google Earth Engine with JavaScript and
-  Python editing, flexible maps, integrated repositories, assets, tasks, and
-  richer local workflows.
+  Free browser-based code editor for Google Earth Engine: JavaScript and
+  Python, 2D/3D maps, Git repositories, assets, exports, and public Apps.
 url: "https://www.earthengine.studio"
 baseurl: ""
 lang: en
 timezone: Europe/Vienna
 permalink: pretty
 
+logo: /assets/images/apple-touch-icon.png
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
@@ -22,9 +23,15 @@ exclude:
   - docs
   - vendor
   - output
+  - AGENTS.md
 
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+      image:
+        path: /assets/images/social-card.jpg
+        width: 1200
+        height: 630
+        alt: Earth Engine Studio, a browser code editor for Google Earth Engine

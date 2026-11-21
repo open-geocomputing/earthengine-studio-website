@@ -2,6 +2,25 @@
 
 ## Unreleased
 
+- Search and sharing: every landing page now leads with a keyword title
+  ("Earth Engine code editor for JavaScript & Python" and its translations), a
+  160-character description, an `og:locale`, and a main heading that starts
+  with "Free code editor for Google Earth Engine". Social tags come from one
+  1200×630 JPEG card (160 KB instead of the 978 KB PNG), fixing the duplicate
+  `twitter:card` tags. The site publishes `sitemap.xml`, `robots.txt`,
+  `llms.txt`, and `SoftwareApplication`/`Organization` JSON-LD.
+- Accuracy: replaced the outdated "three map renderers" claims with MapLibre
+  2D, 3D terrain, and globe maps, and listed the optional AI assistant, in all
+  six languages.
+- Each capability card and workflow step links to the matching guide in the
+  visitor's language on docs.earthengine.studio; the header and footer link to
+  the localized documentation home.
+- Performance: the static logo SVG shrank from 576 KB to 234 KB (rounded path
+  data, identical rendering), and the Lottie renderer is fetched only after
+  the page has loaded instead of from `<head>`.
+- Added `AGENTS.md` with the copy, translation, accuracy, and SEO rules for
+  agents editing the site.
+
 - Replaced the static hero workspace with a privacy-cropped, optimized recording
   of Studio rendering animated ERA5 wind particles on a global satellite map.
   The silent 24 fps demo pauses off-screen, provides a localized play/pause
